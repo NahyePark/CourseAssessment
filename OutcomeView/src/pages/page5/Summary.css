@@ -1,0 +1,46 @@
+
+.option {
+    display: block;
+    font-size: 18px; 
+    margin-bottom: 5px;
+    margin-top: 30px;
+  }
+
+  .table-container {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 30px;
+    width: 80%;
+    overflow-x: hidden
+  }
+
+  .histogram-container {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 30px;
+    width: 80%;
+  }
+
+  .histogram {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .inputText {
+    padding: 8px;
+    margin: 5px;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    width: 80%;
+    height: 300px;
+    margin-left: 50px;
+  }
+
+  .table {
+    margin-left:30px;
+  }
+
+
+  
