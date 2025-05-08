@@ -112,6 +112,10 @@ function Download() {
         }
       };
 
+      const handlePrevPage = () => {
+        navigate(`/Summary`);
+    }
+
     return (
         <div className="pdf-container">
             {url.pdf? (
@@ -131,6 +135,7 @@ function Download() {
                 <p>Loading PDF...</p>
             )}
             <div className="submit-button">
+                <Button text={"Previous"} onClick={handlePrevPage} className="prev-button"/>
                 <Button text={"Download PDF"} onClick={() => handleDownload("pdf")} className="next-button"/>
                 <Button text={"Download Latex"} onClick={() => handleDownload("tex")} className="next-button"/>
                 <Button text={"Download PDF and Latex"} onClick={() => handleDownload("zip")} className="next-button"/>

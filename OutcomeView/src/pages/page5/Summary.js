@@ -16,6 +16,7 @@ function Summary() {
     const courseActivitiescolumns = [
         {name: "ID"},
         {name: "Course Activities supporting the PI"},
+        {name: "Description"}
     ];
 
     const rubricColumns = [
@@ -33,21 +34,14 @@ function Summary() {
         {name: "Developing"},
         {name: "Unsatisfactory"},
     ]
-/*
-    const sendLatexToServer = async () => {
-        const latex = generateLatex(data);
-        try {
-            const response = await axios.post("http://localhost:5000/generate", { latex });
-            const url = response.data.url;
-            updateData("pdfUrl", url); 
-        } catch (err) {
-            console.error("PDF generation failed:", err);
-        }
-    };
- */   
+
     const handleNextPage = () => {
-        //sendLatexToServer();
         navigate(`/Download`);
+    }
+
+    const handlePrevPage = () => {
+        updateData("dataAnalysis", "");
+        navigate(`/Rubric`);
     }
 
     const onChangeTextInput = (e) => {
@@ -59,7 +53,7 @@ function Summary() {
             <h1 className="item">Course <strong>{data.selectedCourse || "None"}</strong></h1>
             <p className="item">Student Learning Outcomes supported by this course: <strong>{data.SLO}</strong><br />{data.description}</p>
             <div className="option">
-                <p className="item"><strong>Program Indicator</strong></p>
+                <p className="item"><strong>Performance Indicator</strong></p>
                 {data.piTable
                     .filter((pi, index, self) => 
                         index === self.findIndex((p) => p.ID === pi.ID)
@@ -100,6 +94,7 @@ function Summary() {
             </div>
 
             <div className="submit-button">
+                <Button text={"Previous"} onClick={handlePrevPage} className="prev-button"/>
                 <Button text={"Submit"} onClick={handleNextPage} className="next-button"/>
             </div>
 

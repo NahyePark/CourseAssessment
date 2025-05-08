@@ -3,19 +3,22 @@ function generateLatex(data) {
     const courseActivitiescolumns = [
         "Course Activities",
         "Program Indicator",
+        "Description",
     ];
 
     const headerToKeyMap = {
         "Course Activities": "Course Activities supporting the PI",
         "Program Indicator": "Performance Indicator",
+        "Description": "Description",
       };
 
-    const CourseActivityTable = data.piTable.map(row => {
-        const keys = Object.keys(row); 
-        keys.pop(); 
-        const { [keys[0]]: _, ...rest } = row; 
-        return rest; 
-      });
+    //const CourseActivityTable = data.piTable.map(row => {
+    //    const keys = Object.keys(row); 
+    //    keys.pop(); 
+    //    const { [keys[0]]: _, ...rest } = row; 
+    //    return rest; 
+    //  });
+    const CourseActivityTable = data.piTable.map(({ ID, ...rest }) => rest);
 
     
 

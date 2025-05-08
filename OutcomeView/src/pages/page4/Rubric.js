@@ -11,11 +11,13 @@ function Rubric() {
     const navigate = useNavigate();
     const {data, updateData} = useData();
     const [prevRubic, setPrevRubric] = useState({});
+    const [selectedSemester, setSelectedSemester] = useState("");
 
 
     const courseActivitiescolumns = [
         {name: "ID"},
         {name: "Course Activities supporting the PI"},
+        {name: "Description", type: "textOrNumber"},
     ];
 
     const rubricColumns = [
@@ -24,7 +26,18 @@ function Rubric() {
         {name: "Satisfactory", type: "textOrNumber"},
         {name: "Developing", type: "textOrNumber"},
         {name: "Unsatisfactory", type: "textOrNumber"},
-    ]
+    ];
+
+    const prevRubricColumn = [
+        {name: "Course Activity"},
+        {name: "PI"},
+        {name: "Description"},
+        {name: "SLO"},
+        {name: "Exemplary"},
+        {name: "Satisfactory"},
+        {name: "Developing"},
+        {name: "Unsatisfactory"},
+    ];
 
 
     const extractInfo = (text) => {
@@ -37,10 +50,8 @@ function Rubric() {
                 for (let line of lines) {
                     const cleanedLine = line.trim().replace(/\s+:/, ":");
                     const categoryMatch = cleanedLine.match(/^(.+):$/);
-                    console.log(categoryMatch);
                     if (categoryMatch) {
                         currentCategory = categoryMatch[1];
-                        console.log(currentCategory); 
                         result[currentCategory] = []; 
                     } else if (cleanedLine.startsWith("-") && currentCategory) {
                         result[currentCategory].push(cleanedLine.substring(1).trim()); 
@@ -55,30 +66,34 @@ function Rubric() {
     
 
     useEffect(() => {
-        if(data.rubricTable.length === 0) {
+        //if(data.rubricTable.length === 0) {
             const rubricTable = data.piTable.flatMap((pi) => ([
                 { "Course Activity": pi["Course Activities supporting the PI"], Exemplary: "", Satisfactory: "", Developing: "", Unsatisfactory: "" , isNumberRow: false},
                 { "Course Activity": pi["Course Activities supporting the PI"], Exemplary: 0, Satisfactory: 0, Developing: 0, Unsatisfactory: 0 , isNumberRow: true}
             ]));
             updateData("rubricTable", rubricTable);
-        }
-    }, [data, updateData])
+        //}
+    }, [data.piTable])
 
+    /*
     useEffect(() => {
-            const getData = async () => {
-                const result = await fetchData("course.previous.rubric.txt");
-                if(result) {
-                    const info = extractInfo(result);
-                    console.log(info);
-                    setPrevRubric(info);
-                }
+        const getData = async () => {
+            const result = await fetchData("course.previous.rubric.txt");
+            if(result) {
+                const info = extractInfo(result);
+                setPrevRubric(info);
             }
-            getData();
-        }, []);
-
-    const handleDataChange = (newData) => {
+        }
+        getData();
+    }, []);
+    */
+    const handleRubricDataChange = (newData) => {
         updateData("rubricTable", newData);
     };
+
+    const handlePIDataChange = (newData) => {
+        updateData("piTable", newData);
+    }
 
     const hasEmptyCells = (data, columns) => {
         for (const row of data) {
@@ -92,7 +107,10 @@ function Rubric() {
     };
 
     const handleNextPage = () => {
-        if(!hasEmptyCells(data.rubricTable, rubricColumns)) {
+        if(hasEmptyCells(data.piTable, courseActivitiescolumns) || hasEmptyCells(data.rubricTable, rubricColumns))
+            alert("Please fill out all cells in the table");
+        else
+        {
             const extractedTable = data.rubricTable.filter(row => row.isNumberRow);
             let cumulativeNumberTable = extractedTable.map((row) => (
                 {
@@ -133,17 +151,37 @@ function Rubric() {
 
             updateData("cumulativeTable", cumulativeNumberTable);
             navigate(`/Summary`);
-        } else {
-            alert("Please fill out all cells in the table");
-        }
+        } 
     }
+
+    const handlePrevPage = () => {
+         updateData({
+            rubricTable: [],
+          });
+
+        navigate("/PI");
+
+    }
+
+    const createRubricTableData = (rubricEntries) => {
+        return rubricEntries.map(entry => ({
+            "Course Activity": entry.exercise,
+            "PI": entry.pi,
+            "Description": entry.description,
+            "SLO": entry.slo + ' ' + entry.level,
+            "Exemplary": entry.rubric.exemplary,
+            "Satisfactory": entry.rubric.satisfactory,
+            "Developing": entry.rubric.developing,
+            "Unsatisfactory": entry.rubric.unsatisfactory,
+        }));
+    };
 
     return (
         <div className="class-container">
             <h1 className="item">Course <strong>{data.selectedCourse || "None"}</strong></h1>
             <p className="item">Student Learning Outcomes supported by this course: <strong>{data.SLO}</strong><br />{data.description}</p>
             <div className="option">
-                <p className="item"><strong>Program Indicator</strong></p>
+                <p className="item"><strong>Performance Indicator</strong></p>
                 {data.piTable
                     .filter((pi, index, self) => 
                         index === self.findIndex((p) => p.ID === pi.ID)
@@ -157,28 +195,41 @@ function Rubric() {
             </div>
 
             <div className="table-container">
-                <Table className="table" columns={courseActivitiescolumns} data={data.piTable} />
+                <Table className="table" columns={courseActivitiescolumns} data={data.piTable} onDataChange={handlePIDataChange} />
             </div>
 
             <div className="table-container">
-                <Table className="table" columns={rubricColumns} data={data.rubricTable} onDataChange={handleDataChange}/>
+                <Table className="table" columns={rubricColumns} data={data.rubricTable} onDataChange={handleRubricDataChange}/>
             </div>
 
             <div className="option">
                 <p className="item"><strong>Previous year's rubric</strong></p>
-                {Object.entries(prevRubic).map(([category, items]) => (
-                <div key={category} style={{ marginBottom: "20px", marginLeft: "40px" }}>
-                    <h5>{category}</h5>
-                    <ul>
-                        {items.map((item, index) => (
-                            <li key={index}>{item}</li>
-                        ))}
-                    </ul>
+                <select 
+                    value={selectedSemester} 
+                    onChange={(e) => setSelectedSemester(e.target.value)} 
+                    className="item"
+                >
+                    <option value="">-- Select Semester --</option>
+                    {Object.keys(data.prevRubric).map((semester, index) => (
+                        <option key={index} value={semester}>
+                            {semester}
+                        </option>
+                    ))}
+                </select>
+                <div className="table-container">
+                    {selectedSemester && data.prevRubric[selectedSemester] && (
+                        <Table
+                            className="table"
+                            columns={prevRubricColumn}
+                            data={createRubricTableData(data.prevRubric[selectedSemester])}
+                            
+                        />
+                        )}
                 </div>
-            ))}
             </div>
 
             <div className="submit-button">
+                <Button text={"Previous"} onClick={handlePrevPage} className="prev-button"/>
                 <Button text={"Submit"} onClick={handleNextPage} className="next-button"/>
             </div>
 
