@@ -1,0 +1,141 @@
+Course description 
+
+cs225
+implement readable and maintainable code by applying principles of encapsulation, data abstraction, and polymorphism
+understand the impact/implications of the choice of the standard containers on the program's perfomance
+apply the knowledge of design patterns to solve computing problems
+write efficient code 
+Apply various design patterns to created structured software
+
+cs330
+examine run-time complexity of a program based on which algorithm and data structure are used
+compare and contrast properties of the algorithm and data structure for optimal usage
+select or design an appropriate algorithm for a computing problem
+understand the tradeoffs between different types of algorithms and data structures 
+Understand the optimization processes, if necessary, to implement a better solution.
+Choose the best algorithm / data structure, to solve a given computing problem.
+Compare time and space complexities of different algorithms
+Implement heuristic-based optimization
+Choose best Data Structure to implement Dijkstra
+
+cs212
+Have a beginner level understanding of DB application in advanced cases and the complexity of real world data.
+
+cs232
+Apply data processing, cleaning, summarization, and basic visualization techniques on smaller size datasets
+Implement complex data processing, wrangling, statistical analysis, and advanced visualization on large datasets
+Work in a team-based half semester long project to analyze a complex dataset
+
+cs280
+Understand the properties of data structures that affect efficiency of a program. Compare utilized data structures for specific programming tasks and identify related algorithm complexities.
+Implement efficient programmatic solutions to complex problems using data structures
+Understand the relative tradeoffs in software solutions/algorithms; Compare time and space complexities of different algorithms.
+Understand the optimization processes, if necessary, to implement a better solution
+
+cs350
+Apply knowledge of physics to real-time simulation(3) Implement collision detection
+Understand the relative tradeoffs in software solutions/algorithms. (3) Compare time and space complexities of various spatial data structures collision detection
+Apply appropriate algorithms / data structures to solve problems in the program-of-study domain (major). (3) Apply Spatial Data Structures to implement efficient collision detection.
+
+cs372
+Apply Machine learning algorithms to solve a given problem.
+Choose an appropriate machine learning algorithm from a variety of algorithms/ approaches to solve the current problem.
+Ability to present course project before an audience of peers and faculty
+
+cs374
+Apply regular expressions, stemming, and other morphological operations
+Implement text-based analysis of a large corpora
+Work in a team-based semester-long project to implement a complex NLP solution
+
+cs100
+Tailor the solution to fit a practical scenario
+Apply appropriate algorithms / data structures to solve problems in the program-of-study domain (major)
+
+cs115
+Apply appropriate algorithms / data structures to solve problems in the program-of-study domain (major)
+Develop an introductory level vocabulary and understanding of programming concepts, terminology, and practice.
+Understand and be able to write scripts and create simple programs. 
+
+cs170
+Use various methods of creating multi-dimensional arrays
+Apply knowledge of rational numbers to create a new data type
+Implement ray to object collision detection optimization using basic bounding shape idea
+Understand the syntactic differences between C and C++.
+Write programs that use the object–oriented techniques of C++.
+Be able to distinguish between an interface and and implementation.
+Overload operators for use with user–defined classes.
+Define and use function and class templates.
+Use the STL vector and list classes.
+
+cs180
+Understand advantages of buffering data
+Understand the relative tradeoffs in software solutions/algorithms
+Apply appropriate algorithms / data structures to solve problems in the program-of-study domain (major)
+
+cs200
+Apply knowledge of computer science to real-time simulation; Apply knowledge of computer science to build graphics engines.
+Apply knowledge of mathematics to real-time simulation; Apply knowledge of Linear Algebra to support computer graphics pipeline.
+
+cs205
+Understand the importance of ethics in the workplace environment, including issues like gender/racial discrimination, respect for intellectual property rights, personal responsibility, etc.
+Understand the importance of respecting intellectual property rights.
+Work proactively to avoid plagiarism and to know when to properly attribute the work of others.
+
+cs245
+Read and write audio files in uncompressed WAVE file format.
+Manipulate raw audio data: normalize and resample.
+Generate and interpret MIDI messages.
+Synthesize sound using wavetable, additive, and frequency modulation synthesis.
+Program using low–level and mid–level audio libraries.
+
+cs250
+Apply knowledge of computer science to real-time simulation. (1) Apply knowledge of computer science to build graphics engines.
+Apply knowledge of mathematics to real-time simulation. (7) Apply knowledge of Linear Algebra to support computer graphics pipeline.
+
+cs261
+Implement a software-based solution to solve the problem, in accordance with 2.3
+
+cs315
+Validate the software solution for correctness
+Ability to employ benchmarking to analyze the implemented code
+Understand the relative tradeoffs in software solutions/algorithms
+Understand the optimization processes, if necessary, to implement a better solution
+Choose the best algorithm / data structure, to solve given computing problem
+
+cs500
+Apply knowledge of computer science to real-time simulation
+
+cs562
+Apply knowledge of computer science to real-time simulation
+
+cs165
+Understand the process of game development in a Game Engine environment.
+Understanding of game objects, components, events, actions and other game related concepts
+Learning common programming patterns used in software development
+
+cs176
+Understand the process of game development in a Game Engine environment.
+Understanding of game objects, components, events, actions and other game related concepts
+Learning common programming patterns used in software development
+
+cs211
+Understand how to write SQL queries and effectively integrate them into application development.
+Understand database modeling and design principles, including normalization and relational algebra.
+Apply an enterprise data model that reflects the organization's business rules using appropriate conceptual data models.
+Describe the fundamental concepts of non-Relational and cloud databases.
+
+cs251
+Apply knowledge of computer science to real-time simulation
+
+cs398
+Apply knowledge of computer science to real-time simulation
+Apply knowledge of mathematics of ray/path tracing
+
+cs541
+Apply knowledge of computer science to real-time simulation
+Apply knowledge of mathematics to real-time simulation
+
+cs116
+Apply appropriate algorithms / data structures to solve problems in the program-of-study domain (major)
+
+

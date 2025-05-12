@@ -1,0 +1,568 @@
+Course description 
+
+cs232
+Implement basic data collecting and processing techniques
+Implement data cleaning algorithms
+Implement visualizations of data
+Summarize data using basic statistical properties
+Understand confidence intervals and basic hypothesis testing as they are applied in data analysis
+
+cs370
+Load and store images in a persistent data storage, e.g. disk, using C/C++
+Manipulate image data as buffers in memory
+Perform mathematical operations with images
+Design and implement common filters used in image enhancement
+Understand spatial and frequency domain representations of images
+Perform user-guided image segmentation of commonly found images
+Understand and implement post-processing effects for computer games and simulations,
+using existing code, or as a stand-alone process
+Identify image transformations required to achieve a particular visual effect
+
+cs570
+Load and store images in a persistent data storage, e.g. disk, using C/C++
+Manipulate image data as buffers in memory
+Perform mathematical operations with images
+Design and implement common filters used in image enhancement
+Understand spatial and frequency domain representations of images
+Perform user-guided image segmentation of commonly found images
+Understand and implement post-processing effects for computer games and simulations,
+using existing code, or as a stand-alone process
+Identify image transformations required to achieve a particular visual effect
+
+cs594
+Understand concepts of cloud architecture and the differences with client designs.
+Use of industry-standard PaaS components.
+Implement and deploy RESTful web services.
+Understand how to integrate core PaaS services into a system design
+Understand fundamental DevOps concerns of CI/CD, monitoring and debugging
+
+cs399
+Understand concepts of cloud architecture and the differences with client designs.
+Use of industry-standard PaaS components.
+Implement and deploy RESTful web services.
+Understand how to integrate core PaaS services into a system design
+Understand fundamental DevOps concerns of CI/CD, monitoring and debugging
+Experience exploring/cleaning/analyzing data and creating static/interactive visualizations will be achieved through the projects.
+skills in independent research and presentation will be practiced through a final project.
+learn and practice concepts and techniques applicable for use in data science and data visualization.
+
+cs599
+Understand fundamental DevOps concerns of CI/CD, monitoring and debugging
+Experience exploring/cleaning/analyzing data and creating static/interactive visualizations will be achieved through the projects.
+skills in independent research and presentation will be practiced through a final project.
+learn and practice concepts and techniques applicable for use in data science and data visualization.
+
+cs598
+Demonstrate sound presentation skills before a live audience of peers,
+Demonstrate the ability to communicate with a diverse audience with varying levels of
+familiarity with a topic
+Demonstrate analytical thinking with an in-depth analysis of a research paper or topic
+Demonstrate an ability to extend existing body of research by suggesting future
+Approaches to solutions wrt. a particular research problem.
+
+cs100
+How numbers and data are represented in binary.
+How binary information can be implemented using electricity.
+How binary arithmetic can be implemented and constructed using logic circuits.
+The basic components of Von Neumann architecture and how they inter-operate.
+Assembly programming with a microcontroller
+
+cs115
+Develop an understanding of what software development is and what software developers do.
+Understand and be able to write scripts and create simple programs.
+Develop an introductory level vocabulary and understanding of programming concepts, terminology, and practice, through lectures, exercises, and assignments.
+
+cs120
+communicate with a computer using a higher-level language.
+understand how the higher-level language is translated into instructions that the computer can execute.
+compile, link, and execute a computer program.
+understand the way in which a program interacts with the computer's CPU and memory.
+use simple data structures and understand how they are represented in the higher-level language.
+apply the course concepts to implement various computer algorithms to solve problems.
+
+cs165
+Understand how to use a high level language (C#)
+Understand the process of game development in a Game Engine environment
+Understanding of game objects, components, events, actions and other game related concepts
+Learning common programming patterns used in software development
+
+cs170
+Understand the syntactic differences between C and C++.
+Write programs that use the object{oriented techniques of C++.
+Be able to distinguish between an interface and an implementation.
+Overload operators for use with user-defined classes.
+Define and use function and class templates.
+Use the STL vector and list classes.
+understand the benefits data abstraction and encapsulation
+use classes to implement user-defined types
+implement polymorphic behavior using inheritance
+use templates to implement generic algorithms
+
+cs180
+create and use virtual machines
+create child processes
+communicate between processes
+work extensively from the command line
+create and manage threads
+synchronize threads and processes with mutexes and semaphores
+schedule tasks using different algorithms
+effectively manage memory
+
+cs200
+construct and use modeling transformations to place 2D triangular meshes into world space
+implement and use a 2D camera to view a scene
+use OpenGL to implement a basic 2D graphics engine
+use bitmaps for 2D texturing
+use GLSL to write simple vertex and fragment shaders
+scan convert 2D primitives to implement a simple 2D graphics engine in software
+All 2D/3D transformations, and how to use them to build viewing and 3D game-like navigation in a realtime interactive program.
+Homogeneous coordinates, and transformations, and how the homogeneous division is used to implement perspective projections.
+Introductory level GLSL and shader programming. How to communicate from the CPU to the GPU and between vertex and fragment shaders.
+Introductory level OpenGL including all the calls necessary to implement an interactive graphics program, including the creation and use (and communication to) shaders, the reading, creation and accessing of textures, and the creation and drawing of Vertex Array Objects.
+Knowledge of the code needed to interact with the operating system to open a window, create a graphics context, and set up callbacks for user interaction.
+
+cs205
+Demonstrate an understanding of relevant professional codes, and their usage as a guide to decision-making
+Discuss technical and ethical approaches to social and ethical issues that arise in the context of computing
+Distinguish between patents, copyrights, and trade-secret protections, such as NDAs
+Identify the impact of specific technologies and tools in the enforcement of patents, copyrights, and trade-secret protections (currently under review as an objective)
+Identify risks and impacts to personal privacy posed by computing technology
+Demonstrate an understanding of privacy protection mechanisms
+Identify professional and societal impact of computing through contemporary events, and case-studies
+Recognize professional responsibilities and make informed judgments in computing practice based on legal and ethical principles
+
+cs211
+Understand how to write common SQL queries.
+Understand the installation and setup with MySQL, and apply it into application development.
+Understand the basic principles in database modeling and design with the application of normalization.
+Develop an enterprise data model that reflects the organization's fundamental business rules with appropriate conceptual data model, including all entities, relationships, attributes.
+Have a beginner level understanding of NoSQL and Cloud DB.
+
+cs225
+have a deep understanding of C++ programming language design
+be knowledgeable of modern available C++ tools
+know C/C++ expression evaluation algorithm and be able to write his/her own complex declarations
+understand C/C++ conversion rules
+be able to use aggregation and inheritance to create new classes
+have a good understanding of function and class templates
+be able to use STL containers and generic algorithm to solve complex problems
+
+cs246
+synthesize sounds using subtractive synthesis
+implement audio effects such as echo, convolution reverb, multiple band equalization, wah-wah and other filters
+write real-time audio applications using standard audio libraries
+
+cs260
+write simple Networked programs using the Windows WinSock library.
+diagnose and explain the operation of TCP/IP networked software.
+describe security threats and define ways to mitigate vulnerabilities.
+demonstrate a program that communicates via the HTTP protocol.
+articulate the basic concepts behind developing secure and performant distributed systems.
+
+cs280
+understand, implement, and be able to use several data structures and their associated algorithms.
+work with are arrays, lists, stacks, queues, trees, hash tables, and graphs.
+be able to apply algorithm complexity and notation in their discussions and evaluations of data structures.
+have the knowledge to select (and implement) the appropriate data structures that will be used in larger projects, especially the game projects in the third and fourth year.
+identify and discuss run-time complexity of a program based on which data structure is used
+apply the knowledge of the data structure to optimize its usage
+select or design an appropriate data structure for a computing problem
+understand the tradeoffs between different types of data structures
+
+cs300
+Understand the modern GPU architecture,
+Implement shading algorithms on the GPU through programmable shaders,
+Implement simple shading models such as the Phong illumination model, environment mapping (for reflection and refraction) and similar techniques,
+Implement a 3D object loader to import assets into a graphics pipeline
+
+cs314
+Understand distributed data management principles, including data consistency, replication, and partitioning.
+Implement distributed algorithms and data processing models using industry-standard tools and frameworks, such as MapReduce and real-time data processing frameworks.
+Deploy and manage distributed data systems on cloud platforms.
+Design and execute data pipelines and ETL (Extract, Transform, Load) processes.
+Apply best practices for data security and privacy in distributed systems and understand regulatory compliance requirements such as GDPR and CCPA.
+
+cs315
+Develop an understanding of basic instruction set design
+Acquire a deeper knowledge of the relationship between source code and the machine representation
+Increase awareness of how memory architecture, cache, and memory access patterns affect the performance of code
+Understand how CPU architecture and hardware optimizations affect the performance of code
+Develop a set of tools that aid the process of software debugging and resolution
+
+cs388
+have a basic working knowledge of how to develop games on a portable platform.
+have learned how to write code that works in an environment that is more limited than normal PC development while improving their knowledge of how to write efficient, optimized code.  
+have experience working with the new Nintendo Switch Platform, something that should be directly applicable to applicable as both a gaming system and as embedded system experience.
+
+cs560
+Refresh knowledge in different 3D rotation representations
+Use quaternions, dual quaternions and VQS to transform o3-d objects
+Model and animation articulated characters with hierarchical structures
+Understand and utilize various interpolation algorithms
+Create object motion along a specified path
+Control travel speed and orientation in desired patterns
+Understand and implement the forward and inverse kinematics algorithms
+Master rigid-body dynamics based on Newtonian Physics
+Implement a physics engine for physically-based real-time simulation
+Simulate the motion deformable and elastic objects
+Comprehend some constrain-based simulation techniques
+
+cs460
+Refresh knowledge in different 3D rotation representations
+Use quaternions, dual quaternions and VQS to transform o3-d objects
+Model and animation articulated characters with hierarchical structures
+Understand and utilize various interpolation algorithms
+Create object motion along a specified path
+Control travel speed and orientation in desired patterns
+Understand and implement the forward and inverse kinematics algorithms
+Master rigid-body dynamics based on Newtonian Physics
+Implement a physics engine for physically-based real-time simulation
+Simulate the motion deformable and elastic objects
+Comprehend some constrain-based simulation techniques
+
+cs529
+Basic ability to create a C++ solution that can be integrated to other programs (SDK) 
+New / improved skills on technical decisions.
+Basic ability to create programs based on Graphics API (OpenGL)
+Fundamentals of how graphics are generated in the computer screen
+Understand each component of a game engine individually
+Understand how all components of a game engine work together
+Principles of software development architecture
+Theory and practice.
+Experience on how to put together a game from scratch
+
+cs200
+Understand an appropriately complex computing or scientific problem and identify possible solution methods.
+Understand and/or visualize the data and/or the computing requirements in the context of the project’s discipline.
+Understand how computer science theory and software development fundamentals can be applied to produce computing-based solutions.
+Engage as a team member in activities appropriate to the project's discipline.
+Communicate effectively in a variety of professional contexts.
+
+cs300
+Understand appropriately complex computing or scientific problems and identify possible solution methods.
+Visualize and understand the data and understand the computing requirements in the context of the project’s discipline.
+Apply computer science theory and software development fundamentals to produce computing-based solutions.
+Collaborate in activities appropriate to the project's discipline.
+Communicate effectively in a variety of professional contexts.
+
+cs400
+Appraise appropriately complex computing or scientific problems and evaluate possible solution methods.
+Visualize and understand the data and understand the computing requirements in the context of the project’s discipline.
+Apply computer science theory and software development fundamentals to produce computing-based solutions.
+Collaborate in activities appropriate to the project's discipline.
+Communicate effectively in a variety of professional contexts.
+Analyze the findings of the project and communicate them in a written scientific form.
+
+MAT320
+Students will learn some of the basic algorithms in digital signal processing using complex numbers, such as the Discrete and Fast Fourier Transforms, and various filters.
+Students will become familiar with basic concepts of digital signal processing and will describe these from the mathematical perspective.
+Students will solidify their knowledge of Linear Algebra and Calculus by using these subjects as tools to solve problems involving vector spaces of complex numbers, continuous functions, and discrete functions and signals.
+
+cs518
+Students will learn some of the basic algorithms in digital signal processing using complex numbers, such as the Discrete and Fast Fourier Transforms, and various filters.
+Students will become familiar with basic concepts of digital signal processing and will describe these from the mathematical perspective.
+Students will solidify their knowledge of Linear Algebra and Calculus by using these subjects as tools to solve problems involving vector spaces of complex numbers, continuous functions, and discrete functions and signals.
+
+cs225
+implement readable and maintainable code by applying principles of encapsulation, data abstraction, and polymorphism
+understand the impact/implications of the choice of the standard containers on the program's perfomance
+apply the knowledge of design patterns to solve computing problems
+write efficient code
+
+cs330
+be able to prove correctness of algorithms
+have deep understanding of differences and advantages of iterative and recursive algorithms
+have a knowledge base of existing algorithms
+understand speed vs. space trade-off, importance of data-structures, and data preprocessing
+be able to design new algorithms using the ideas from class
+
+cs525
+implement readable and maintainable code by applying principles of encapsulation, data abstraction, and polymorphism
+understand the impact/implications of the choice of the standard containers on the program's perfomance
+apply the knowledge of design patterns to solve computing problems
+write efficient code
+
+cs116
+Understand how to use a high level computer programming language
+Understand the process of writing, compiling and executing a program
+Understanding of variables, expressions, conditionals, loops, functions and other fundamental concepts to programming
+Apply the course concepts to implement various algorithms to solve problems
+
+cs251
+have implemented the full graphics pipeline, including 3D transformations, perspective, texture mapping, and basic lighting.
+student will have been introduced to shader programming on modern graphics cards.
+
+cs373
+Implement recommender systems.
+Implement clustering algorithms.
+Compare various algorithms for exploration and exploitation in Reinforcement Learning
+Apply value iteration, policy iteration and q-learning.
+Implement machine learning algorithms in Reinforcement Learning specific environment.
+Understand limitations and applicability of various models.
+Understand and present research articles/papers in the field related to the topics of this course (500 level only)
+
+cs380
+a demonstrated ability to code game AI using behavior trees, A* pathfinding, and various terrain analysis algorithms.
+students will demonstrate an ability to research, implement, present, and write a report on a game AI topic of the student’s choice within a team setting.
+students will gain an awareness and understanding of dozens of game AI algorithms and when to apply them in the areas of AI architecture, movement, agent sensing, agent cooperation, terrain analysis, and learning.
+
+cs541
+students will have implemented (via shader programming) a number of basic graphics algorithms, as well as demonstrated an understanding of the mathematics involved.
+
+cs593
+Implement recommender systems.
+Implement clustering algorithms.
+Compare various algorithms for exploration and exploitation in Reinforcement Learning
+Apply value iteration, policy iteration and q-learning.
+Implement machine learning algorithms in Reinforcement Learning specific environment.
+Understand limitations and applicability of various models.
+Understand and present research articles/papers in the field related to the topics of this course (500 level only)
+
+cs176
+Understand advanced features of high-level programming languages
+Understand common programming patterns used in game development
+Understand the process of game development in a Game Engine environment
+Applying inheritance in developing common game architectural patterns
+Apply scripting and 3D game development techniques
+Develop game prototyping and fast iteration skills
+
+cs398
+students will have an understanding of ray-tracing (Monte Carlo path tracing), BRDF lighting calculations, and real time denoising filters.
+students will have a grounding in the Vulkan API, and will have built a Vulkan real time application including both rasterization and raytracing pipelines.
+
+cs599
+students will have an understanding of ray-tracing (Monte Carlo path tracing), BRDF lighting calculations, and real time denoising filters.
+students will have a grounding in the Vulkan API, and will have built a Vulkan real time application including both rasterization and raytracing pipelines.
+
+cs394
+student will gain prctical knowledge and experience with various input concepts, as well as how to generically implement these concepts as a tool.
+Creating this framework and implementing these concepts will exercise the student's knowledge of existing input systems, input tools, and programming in general.
+Studying these input concepts will provide ample opportunity in creating and implementing input tools that will allow them to quickly iterate on the input tools of future games.
+It will also result in the creation of a tool to allow users to plan their input schema withoutneeding to program the game inself.
+
+cs374
+Apply regular expressions to describe patterns in textual corpora
+Implement morphological operations based on the grammar of the underlying language
+Implement stemming operations for part-of-speech tagging
+Implement unification of grammar features
+Implement text-based analysis of large corpora
+Understand basic NLP tasks and requirements
+Implement preprocessing and data transformations for common NLP tasks 
+Understand and implement open source models
+Design NLP applications to perform question – answering, sentiment analysis, language translation and text summarization
+Understand transformer architecture and model types
+Implement transformer models to solve common NLP tasks
+Implement Fine-tuning of pretrained models
+
+cs574
+Apply regular expressions to describe patterns in textual corpora
+Implement morphological operations based on the grammar of the underlying language
+Implement stemming operations for part-of-speech tagging
+Implement unification of grammar features
+Implement text-based analysis of large corpora
+Apply research practices to investigate a research-based problem in the field
+Implement a semester-long project that addresses a specifically identified research area in NLP
+Author and present a paper based on the project to an audience of their peers
+
+cs397
+Understand concepts of cloud architecture and the differences with client designs.
+Use of industry-standard PaaS components.
+Implement and deploy RESTful web services.
+Understand how to integrate core PaaS services into a system design
+Understand fundamental DevOps concerns of CI/CD, monitoring and debugging
+
+cs597
+Understand concepts of cloud architecture and the differences with client designs.
+Use of industry-standard PaaS components.
+Implement and deploy RESTful web services.
+Understand how to integrate core PaaS services into a system design
+Understand fundamental DevOps concerns of CI/CD, monitoring and debugging
+
+cs550
+to survey techniques, past and present, relevant to physics engines as well as gaining first-hand experience resolving the many issues involved in creating a working physics engine. 
+
+cs199
+Obtain familiarity with AI concepts and techniques used in games.
+Attain practical experience implementing AI logic applied to games.
+Applying learned techniques to solve a diverse set of design challenges
+Develop the mindset necessary to bridge design and programming.
+Improve on programming and logic based skills.
+
+cs212
+Understand how the contemporary tech industry generates and utilizes SQL in various contexts.
+Understand the internal workings of commercial databases and cloud data systems.
+Understand the data system design principles behind large scale applications by designing and implementing system architectures for selected scenarios.
+Identify and describe the applications of databases in advanced use cases, and analyze the challenges presented by real-world data complexity.
+
+cs590
+Understand how the contemporary tech industry generates and utilizes SQL in various contexts.
+Understand the internal workings of commercial databases and cloud data systems.
+Understand the data system design principles behind large scale applications by designing and implementing system architectures for selected scenarios.
+Identify and describe the applications of databases in advanced use cases, and analyze the challenges presented by real-world data complexity.
+
+cs230
+Understand the fundamental design principles in component-based architecture.
+Understand software design patterns and their application in modern game engine architecture.
+Understand the application of linear algebra (e.g. matrices and vectors) in the context of graphics and physics.
+Understand fundamental concepts in game engine development, including memory management, class hierarchy, graphics, basic physics, and serialization.
+
+cs245
+read and write audio files in uncompressed WAVE file format.
+manipulate and resample raw audio data.
+work with MIDI messages.
+understand audio spectra.
+create sound using wavetable and additive synthesis.
+program real–time audio applications, such as a simple synthesizer.
+
+cs250
+use modeling transformations to place 3D triangular meshes into world space.
+implement and use a 3D camera to view objects.
+use GLSL to write vertex and fragment shaders that implement the Phong lighting model.
+use OpenGL to implement a basic graphics engine.
+
+cs251
+students will have learned the full graphics pipeline, including 3D transformations, perspective, texture mapping, and basic lighting. 
+they will have been introduced to shader programming on modern graphics cards.
+
+cs261
+Analyze the scalability challenges faced by modern distributed multi-player games.
+Assess industry-standard solutions to scalability challenges, synthesizing their advantages and limitations in various gaming contexts.
+Implement a simplified real-time state replication system for games.
+Design and develop a simplified, practical user service using common programming languages, frameworks, and service providers.
+Compare and contrast the trade-offs of different technologies found in multi-player games.
+
+cs325
+Design (design principles (learnability, visibility, error prevention, efficiency, and graphic design), human capabilities (including perception, motor skills, color vision, attention, and human error))
+Implementation (techniques for building user interfaces) 
+Evaluation (evaluating and measuring interface usability, including heuristic evaluation, predictive evaluation, and user testing)
+
+cs350
+student will understand the theory behind the different spatial data structures, culling methods, and spatial partitioning and collision detection algorithms.
+student will write various intersection functions and spatial partitioning algorithms in a provided framework.
+
+cs355
+have deep understanding of benefits and disadvantages of parallel programming model.
+be able to write efficient code using win32 threads and POSIX threads.
+know core designs utilizing multithreaded model.
+
+cs593
+have deep understanding of benefits and disadvantages of parallel programming model.
+be able to write efficient code using win32 threads and POSIX threads.
+know core designs utilizing multithreaded model.
+
+cs372
+Students will be able to understand and implement Linear and multilinear regression
+Students will be able to understand and implement Naïve Bayes
+Students will be able to understand and implement K Nearest Neighbor
+Students will be able to understand and implement Decision trees
+Students will be able to understand and implement Ensemble models
+Students will be able to evaluate model suitability for a given machine learning problem
+
+cs375
+Develop an understanding of basic compiler design
+Acquire a deeper knowledge of the relationship between source code and the machine representation
+Gain user level experience on LLVM and related useful compiler tools
+Understand how CPU architecture and hardware optimizations affect the performance of code
+
+cs396
+Create professional, industry-specific resumes and cover letters that effectively showcase their technical and soft skills.
+Demonstrate proficiency in answering technical and behavioral interview questions through mock interviews and practical exercises.
+Employ effective networking strategies to build professional connections and identify job opportunities in computer science fields.
+Apply leadership and personal growth strategies inspired by industry leaders to their own career development.
+
+cs519
+Students will learn some of the basic algorithms in digital signal processing using complex numbers, such as the Discrete and Fast Fourier Transforms, and various filters.
+Students will become familiar with basic concepts of digital signal processing and will describe these from the mathematical perspective.
+Students will solidify their knowledge of Linear Algebra and Calculus by using these subjects as tools to solve problems involving vector spaces of complex numbers, continuous functions, and discrete functions and signals.
+
+cs561
+student will understand various numerical integration techniques for ordinary and partial differential equations.
+be able to apply this knowledge to implement particle systems, model flocking behavior, and simulate natural phenomena, such as waves and fluids.
+
+cs596
+Students will be able to understand and implement Linear and multilinear regression
+Students will be able to understand and implement Naïve Bayes
+Students will be able to understand and implement K Nearest Neighbor
+Students will be able to understand and implement Decision trees
+Students will be able to understand and implement Ensemble models
+Students will be able to evaluate model suitability for a given machine learning problem
+
+CSP350
+Understand appropriately complex computing or scientific problems and identify possible solution methods.
+Visualize and understand the data and understand the computing requirements in the context of the project’s discipline.
+Apply computer science theory and software development fundamentals to produce computing-based solutions.
+Collaborate in activities appropriate to the project's discipline.
+Communicate effectively in a variety of professional contexts.
+
+CSP450
+Appraise appropriately complex computing or scientific problems and evaluate possible solution methods.
+Visualize and understand the data and understand the computing requirements in the context of the project’s discipline.
+Apply computer science theory and software development fundamentals to produce computing-based solutions.
+Collaborate in activities appropriate to the project's discipline.
+Communicate effectively in a variety of professional contexts.
+Analyze the findings of the project and communicate them in a written scientific form.
+
+CSP250
+Understand possible solution methods to the given scientific or computing problem.
+Apply computer science theory and software development fundamentals to produce computing-based solutions.
+Understand how to test and improve the proposed computing solution to meet the technical requirements of the project.
+Understand the broader impact and ethical aspects of the proposed project.
+Collaborate in activities appropriate to the project's discipline.
+Communicate effectively in a variety of professional contexts.
+
+cs376
+Design and implement a neural network
+Select hyperparameters, use batch processing and regularization for neural networks
+Implement convolutional neural networks in computer vision and pattern recognition applications
+Implement deep reinforcement learning for neural networks
+Implement a recurrent or generative model
+Understand the basic principles of large language models
+Additionally, graduate students will complete research assignments which consists of in-depth reading and presentation of research papers in the field.
+
+cs595
+Design and implement a neural network
+Select hyperparameters, use batch processing and regularization for neural networks
+Implement convolutional neural networks in computer vision and pattern recognition applications
+Implement deep reinforcement learning for neural networks
+Implement a recurrent or generative model
+Understand the basic principles of large language models
+Additionally, graduate students will complete research assignments which consists of in-depth reading and presentation of research papers in the field.
+
+cs174
+Compare and contrast the process of creating audio content for linear media vs interactive media
+Define the major components of a game engine 
+Code a state machine using scripting language to create a basic game loop with Menu, Play, Win, Lose states
+Demonstrate the ability to use scripting to define object behaviors such as movement and state change
+Describe how to use a state machine to implement audio behaviors such as fade-in, and context-based sound selection
+Define “Unit test” and explain how a unit test can be used to create more robust code
+Demonstrate how to play audio in response to gameplay actions
+Demonstrate how to us a gameplay parameter to control and modify audio parameters of a game sound
+Contrast text-based scripting languages with visual scripting languages
+
+cs381
+understand capabilities and deficiencies of various search methods – informed and uninformed, and be able to predict the advantages of using a particular method in a given environment
+utilize minimax algorithm to solve turn-based games
+apply the knowledge of logic-based agents to solve complicated decision problems
+be able to create production and expert system based of first-order logic
+be able to formulate and solve problems using ADL language and POP algorithms
+understand pros and cons of the methods discussed in class when aplied to real-time simulations
+
+cs500
+Calculations for ray-surfaces intersection of many types of surfaces: explicit, implicit, procedural, fractal, …
+Local lighting calculations: Modern micro-facet BRDFs, reflection, refraction, shadowing.
+Global lighting calculations: Indirect calculations via the integral lighting equation.
+The Monte Carlo solution to the integral lighting equation including many importance sampling techniques, multiple-importance sampling and other performance enhancements.
+
+cs562
+Students will have an understanding of (and implementation of) a multi-featured multi-pass graphics pipeline including implemented on a CPU and on a GPU using vertex, pixel, and compute shaders.
+The student will have also gained some experience in reading, understanding, and implementing modern research papers as well as some experience in presenting such to peers.
+
+
+
+
+
+
+
+
+
+

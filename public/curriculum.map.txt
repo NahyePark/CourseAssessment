@@ -1,0 +1,10 @@
+CS1 Analyze a complex computing problem and apply principles of computing and other relevant disciplines to identify solutions.
+CS2 Design, implement, and evaluate a computing-based solution to meet a given set of computing requirements in the context of the program’s discipline.
+CS3 Communicate effectively in a variety of professional contexts.
+CS4 Recognize professional responsibilities and make informed judgments in computing practice based on legal and ethical principles.
+CS5 Function effectively as a member or leader of a team engaged in activities appropriate to the program’s discipline.
+CS6 Apply computer science theory and software development fundamentals to produce computing-based solutions.
+
+CS225: CS4-I
+CS280: CS5-R
+CS330: CS2-E

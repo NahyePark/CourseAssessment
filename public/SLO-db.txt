@@ -1,0 +1,75 @@
+CS1 "Analyze a complex computing problem and apply principles of computing and other relevant disciplines to identify solutions" F24
+CS2 "Design, implement, and evaluate a computing-based solution to meet a given set of computing requirements in the context of the program’s discipline." F24
+CS3 "Communicate effectively in a variety of professional contexts." F24
+CS4 "Recognize professional responsibilities and make informed judgments in computing practice based on legal and ethical principles." F24
+CS5 "Function effectively as a member or leader of a team engaged in activities appropriate to the program’s discipline." F24
+CS6 "Apply computer science theory and software development fundamentals to produce computing-based solutions." F24
+
+CS200 CS1 I
+CS230 CS1 I
+CS314 CS1 I
+CS372 CS1 I
+CS250 CS1 R
+CS300 CS1 E
+CS350 CS1 R
+CS550 CS1 R
+CS211 CS2 I
+CS225 CS2 I
+CS230 CS2 I
+CS260 CS2 I
+CS212 CS2 E
+CS550 CS2 E
+CS225 CS2 E
+CS261 CS2 E
+CS372 CS3 I
+CS314 CS3 R
+CS350 CS3 E
+CS260 CS4 I
+CS372 CS4 I
+CS314 CS4 R
+CS205 CS4 E
+CS120 CS6 I
+CS170 CS6 I
+CS180 CS6 I
+CS225 CS6 I
+CS230 CS6 I
+CS280 CS6 I
+CS261 CS6 I
+CS280 CS6 R
+CS314 CS6 R
+CS330 CS6 E
+CS350 CS6 R
+CSP350 CS2 E
+CSP200 CS3 I
+CSP200 CS4 I
+CSP250 CS3 R
+CSP250 CS4 R
+CSP300 CS3 R
+CSP350 CS3 E
+GAM150 CS2 I
+GAM150 CS3 I
+GAM150 CS5 I
+GAM150 CS4 I
+GAM200 CS3 R
+GAM200 CS4 I
+GAM200 CS5 I
+GAM250 CS2 R
+GAM250 CS4 R
+GAM300 CS3 R
+GAM300 CS4 R
+GAM350 CS2 E
+GAM350 CS3 E
+GAM350 CS4 E
+MAT140 CS1 I
+MAT150 CS1 I
+MAT180 CS1 I
+MAT258 CS1 I
+MAT200 CS1 R
+MAT230 CS1 R
+MAT250 CS1 R
+PHY200 CS1 I
+PHY200L CS1 I
+PHY250 CS1 I
+PHY300 CS1 R
+
+
