@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import { useState, useEffect } from "react";
 import Button from "../../components/Button"
-import { fetchData } from "../../services/api";
+import { fetchPIs } from "../../services/api";
 import { useData } from "../DataContext";
 import "./SLO.css";
 import "../Pages.css";
@@ -13,36 +13,16 @@ function SLO() {
     const [outcomes, setOutcomes] = useState([]);
     const {data, updateData} = useData();
 
-    const extractInfo = (text) => {
-        const lines = text.split("\n").map(line => line.trim()).filter(Boolean);
-
-        let currentCourse = null;
-        let result = [];
-        
-        for(const line of lines)
-        {
-            if(line.toLowerCase() === "course description")
-                continue;
-
-            if(/^[a-zA-Z]{2,5}\d{2,4}[a-zA-Z]*$/.test(line))
-            {
-                currentCourse = line.toLowerCase();
-                continue;
-            }
-
-            if (currentCourse && currentCourse === data.selectedCourse.toLowerCase())
-                result.push(line);
-        }
-
-        return result;
-    }
-
     useEffect(() => {
         const getData = async () => {
-            const result = await fetchData("PI_Old-db.txt");
-            if(result) {
-                const info = extractInfo(result);
-                setOutcomes(info);
+            const result = await fetchPIs();
+
+            if(result && result.length) {
+                const selectedCourse = data.selectedCourse.toLowerCase();
+                const filtered = result.filter(item => item.course.toLowerCase() === selectedCourse)
+                                    .map(item=> item.indicator);
+                
+                setOutcomes(filtered);                   
             }
         }
         getData();
@@ -98,5 +78,3 @@ function SLO() {
 }
 
 export default SLO;
-
-//<p>Selected: {Object.keys(checkedItems).filter((key) => checkedItems[key]).join(", ")}</p>

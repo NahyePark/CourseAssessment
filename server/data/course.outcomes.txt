@@ -1,0 +1,48 @@
+cs120
+
+Course Learning Outcomes:
+=========================
+ - use flowchart to represent a step-by-step solution to a computing problem
+ - convert a step-by-step solution to a C program
+ - understand the data flow in a computer program
+ - utilize basic debugging techniques
+
+================================================================================
+cs170
+
+Course Learning Outcomes:
+=========================
+ - understand the benefits data abstraction and encapsulation
+ - use classes to implement user-defined types
+ - implement polymorphic behavior using inheritance
+ - use templates to implement generic algorithms
+
+================================================================================
+cs225
+
+Course Learning Outcomes:
+=========================
+ - implement readable and maintainable code by applying principles of encapsulation, data abstraction, and polymorphism
+ - understand the impact/implications of the choice of the standard containers on the program's perfomance
+ - apply the knowledge of design patterns to solve computing problems
+ - write efficient code 
+
+================================================================================
+cs280
+
+Course Learning Outcomes:
+=========================
+ - identify and discuss run-time complexity of a program based on which data structure is used
+ - apply the knowledge of the data structure to optimize its usage
+ - select or design an appropriate data structure for a computing problem
+ - understand the tradeoffs between different types of data structures
+
+================================================================================
+cs330
+
+Course Learning Outcomes:
+=========================
+ - examine run-time complexity of a program based on which algorithm and data structure are used
+ - compare and contrast properties of the algorithm and data structure for optimal usage
+ - select or design an appropriate algorithm for a computing problem
+ - understand the tradeoffs between different types of algorithms and data structures 

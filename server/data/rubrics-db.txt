@@ -1,0 +1,1286 @@
+DB: course semester SLO course_exercise PI description unsatisfactory developing satisfactory exemplary
+
+cs330 
+F24 
+CS6 
+E
+"final exam grade" 
+"Compare time and space complexities of different algorithms"  
+"final exam includes questions ranging from simple applications of known algorithms to designing algorithms to solve a given problem" 
+"student only able to solve simple problems like applying an existing algorithm"
+"student solved some problems that require designing an algorithm"
+"student solved most problems that require designing an algorithm"
+"student solved all problems plus extra complexity problems"
+
+cs330 
+F24 
+CS6 
+E
+"TSP assignment"
+"Implement heuristic-based optimization"
+"implement backtracking branch and bound algorithm for TSP"
+"student’s code passed only the basic tests"
+"most tests have passed"
+"all tests have passed, but not the ones that require extra optimization"
+"student implemented the algorithm and optimized it" 
+
+cs330 
+F24 
+CS6 
+E
+"electric Dijkstra assignment"
+"Choose best Data Structure to implement Dijkstra"
+"a variant of Dijkstra algorithm"
+"student’s code passed only the basic tests"
+"most tests have passed"
+"all tests have passed, but not the ones that require extra optimization"
+"student implemented the algorithm and optimized it" 
+
+cs212
+S24
+CS1
+I
+"Assignment"
+"Have a beginner level understanding of DB application in advanced cases and the complexity of real world data."
+"?"
+"Assignment not submitted or incomplete: grade is in range (0% - 50%)"
+"Assignment submitted, but not fully functional: grade is in range (51%, 75%)"
+"Assignment submission meets most requirements: grade is in range (76%, 94%)"
+"Assignment submission meets all requirements: grade is in range (95% - 100%)"
+
+cs232
+S24
+CS1
+?
+"Core Data Engineering and Analytics (basic Python, numerical Python, data frames, visualization)"
+"?"
+"?"
+"No core data engineering technique implemented or implemented with errors."
+"Some basic core data engineering techniques implemented with minor errors."
+"Some basic core data engineering techniques implemented without any implementation errors."
+"Various basic core data engineering techniques implemented without any implementation errors."
+
+cs232
+S24
+CS1
+?
+"Advanced Data Engineering and Analytics (data cleaning, data wrangling, aggregation, time series, visualization)"
+"?"
+"?"
+"No advanced engineering technique implemented or implemented with errors."
+"Some advanced data engineering techniques implemented with minor errors."
+"Some advanced data engineering techniques implemented without any implementation errors."
+"Various advanced data engineering techniques implemented without any implementation errors."
+
+cs232
+S24
+CS1
+?
+"Statistical methods (correlation, distributions, normalization, hypothesis tests)"
+"?"
+"?"
+"No or very minimal use of statistical methods"
+"Only one single statistical method used"
+"Two or more statistical methods used"
+"Various statistical method used"
+
+cs232
+S24
+CS1
+?
+"Presentation style and visual aids"
+"?"
+"?"
+"Did not present, or the presentation is incomplete"
+"Presentation is not structured, or no data analysis presented"
+"Presentation is mildly confusing, or not enough visual aids are provided"
+"Presentation is easy to follow, with lots of visual aids to understand data analysis"
+
+cs280
+S24
+CS6
+?
+"Basic Data Types and Data Structures and related algorithm analysis"
+"?"
+"?"
+"No data structure implemented or implemented with errors."
+"Some basic data structures implemented with minor errors."
+"Some basic data structures implemented without any implementation errors."
+"Various basic data structures implemented without any implementation errors."
+
+cs280
+S24
+CS6
+?
+"Advanced Data Types and Data Structures and related algorithm analysis"
+"?"
+"?"
+"No advanced structure implemented or implemented with errors."
+"Some advanced data structures implemented with minor errors."
+"Some advanced data structures implemented without any implementation errors."
+"Various advanced data structures implemented without any implementation errors."
+
+cs280
+S24
+CS6
+?
+"Asymptotic Computational Complexity and Recursion"
+"?"
+"?"
+"No or very minimal use of statistical methods"
+"Only one single statistical method used"
+"Two or more statistical methods used"
+"Various statistical method used"
+
+cs280
+S24
+CS6
+?
+"Computer science theory applied"
+"?"
+"?"
+"No or very little  participation in quizzes and self-checks. Unsuccessful or no exam(s) taken."
+"Some  participation in quizzes and self-checks. Very low scores on exam(s)"
+"Active participation in quizzes and self-checks. Satisfactory exam results."
+"Most active participation in quizzes and self-checks. Outstanding exam results."
+
+cs350
+S24
+CS1
+E
+"Assignment #5"
+"Apply knowledge of physics to real-time simulation(3) Implement collision detection"
+"Use C++ to implement the GJK and Minkowski Difference Methods"
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs350
+S24
+CS6
+E
+"quizzes"
+"Understand the relative tradeoffs in software solutions/algorithms. (3) Compare time and space complexities of various spatial data structures collision detection"
+"Use quizzes to verify the understanding of the theory behind the different spatial data structures, culling methods, and spatial partitioning and collision detection algorithms and related time/space complexity comparisons."
+"Grade in range (0%, 25%)"
+"Grade in range (25%, 60%)"
+"Grade in range (60%, 90%)"
+"Grade in range (90%, 100%)"
+
+cs350
+S24
+CS6
+E
+"Assignment #1, #2, #3 and #4"
+"Apply appropriate algorithms / data structures to solve problems in the program-of-study domain (major). (3) Apply Spatial Data Structures to implement efficient collision detection."
+"Use C++ to implement various spatial data structures/classes and partitioning algorithms to solve problems in object pair queries of 3D objects and ray/object intersections."
+"Grade in range (0%, 25%)"
+"Grade in range (25%, 60%)"
+"Grade in range (60%, 90%)"
+"Grade in range (90%, 100%)"
+
+cs372
+S24
+CS1
+I
+"Programming Assignments"
+"Apply Machine learning algorithms to solve a given problem."
+"All programming assignments include opportunities for students to demonstrate their understanding and mastery of exploratory data analysis and design and tune various machine learning algorithms."
+"Assignment not submitted or incomplete: grade is in range (0% - 50%)"
+"Assignment submitted, but not fully functional: grade is in range (51%, 75%)"
+"Assignment submission meets most requirements: grade is in range (76%, 94%)"
+"Assignment submission meets all requirements: grade is in range (95% - 100%)"
+
+cs372
+S24
+CS3
+I
+"Compare and Implement methods"
+"Choose an appropriate machine learning algorithm from a variety of algorithms/ approaches to solve the current problem."
+"The semester long project, gives the students the opportunity to explore different ML algorithms and choose the most appropriate for the problem at hand."
+"No ML algorithm implemented or implemented with errors."
+"Some ML algorithms implemented with minor errors."
+"Some ML algorithms implemented without any implementation errors."
+"Various ML algorithms implemented without any implementation errors."
+
+cs372
+S24
+CS3
+R
+"Project depth and Presentation quality"
+"Ability to present course project before an audience of peers and faculty"
+"The semester long project where the students pitch their ideas and present their results with analysis."
+"Did not present, or the presentation is incomplete"
+"Presentation is not structured, or no data analysis presented"
+"Presentation is mildly confusing, or not enough visual aids are provided
+"Presentation is easy to follow, with lots of visual aids to understand data analysis"
+
+cs374
+S24
+CS1
+?
+"Core functionality (regular expressions, stemming, dependency parsing)"
+"?"
+"?"
+"Core functionality is either not implemented, or implemented with errors"
+"The core functionality is partially implemented"
+"The core functionality of the project is implemented without any further optimizations"
+"The core functionality of the project is implemented using optimizations available in the language / platform for implementation"
+
+cs374
+S24
+CS1
+?
+"Using correct attribution to references/sources"
+"?"
+"?"
+"References are not cited, or not provided in appropriate order."
+"N/A"
+"N/A"
+"References are cited in the text and provided at the end of the paper in appropriate order."
+
+cs374
+S24
+CS1
+?
+"Compare and contrast methods"
+"?"
+"?"
+"No comparison provided, or very minimal comparison made"
+"Competing methods of implementing the functionality are partially compared, or the text is not complete"
+"Competing methods of implementing the functionality are compared, but no further aids provided for understanding"
+"Competing methods of implementing the functionality are compared, and the comparison is presented using visual aids in addition to text"
+
+cs374
+S24
+CS1
+?
+"Presentation style and visual aids"
+"?"
+"?"
+"Presentation is easy to follow, with lots of visual aids to understand data analysis"
+"Presentation is mildly confusing, or not enough visual aids are provided"
+"Presentation is not structured, or no data analysis presented"
+"Did not present, or the presentation is incomplete"
+
+cs374
+S24
+CS1
+?
+"Writing style and grammatical errors"
+"?"
+"?"
+"Grammatical errors and no text provided"
+"N/A"
+"Some grammatical errors, and the text is unclear"
+"No grammatical errors, and the text is presented in a clear format"
+
+cs100
+S24
+CS6
+I
+"Lab 4: RS Flip Flop & D-Latch"
+"Tailor the solution to fit a practical scenario"
+"The course requires students to compare different hardware devices and chose a configuration to build memory systems"
+"Assignment not submitted or incomplete: grade in range (0% - 50%)"
+"Assignment submitted, but not fully functional: grade in range (51%, 75%)"
+"Assignment submission meets most requirements: grade in range (76%, 94%)"
+"Assignment submission meets all requirements: grade in range (95% - 100%)"
+
+cs100
+S24
+CS6
+I
+"Final Project"
+"Tailor the solution to fit a practical scenario"
+"Students have to tailor a solution (hardware and assembly algorithms) to build a controller with buttons, joystick, sound, and others."
+"Assignment not submitted or incomplete: grade in range (0% - 50%)"
+"Assignment submitted, but not fully functional: grade in range (51%, 75%)"
+"Assignment submission meets most requirements: grade in range (76%, 94%)"
+"Assignment submission meets all requirements: grade in range (95% - 100%)"
+
+cs100
+S24
+CS6
+I
+"Lab 9: ADC"
+"Apply appropriate algorithms / data structures to solve problems in the program-of-study domain (major)"
+"This activity requires the student to build the circuit and code the assembly algorithms to implement a joystick that reacts to different position thresholds."
+"Assignment not submitted or incomplete: grade in range (0% - 50%)"
+"Assignment submitted, but not fully functional: grade in range (51%, 75%)"
+"Assignment submission meets most requirements: grade in range (76%, 94%)"
+"Assignment submission meets all requirements: grade in range (95% - 100%)"
+
+cs115
+S24
+CS6
+I
+"?"
+"Apply appropriate algorithms / data structures to solve problems in the program-of-study domain (major)"
+"The course requires students to learn the basics of programming in the C/C++ languages, to solve introductory programming problems. These problems require students to understand basic data types, branching, iteration, functions, and arrays."
+"D,F"
+"C"
+"B"
+"A"
+
+cs170
+S24
+CS6
+I
+"?"
+"Use various methods of creating multi-dimensional arrays"
+"Student implement a 1) simple robot that follows commands to navigate its environment and 2) table of strings – a data type with some artificial operations similar to tensor product and merging of 2 tables."
+"Student was unable to implement the required logic."
+"Student was able to implement some of the logic, but most tests are failing."
+"Student passes all tests."
+"Student was unable to implement the required logic."
+
+cs170
+S24
+CS6
+I
+"?"
+"Apply knowledge of rational numbers to create a new data type"
+"Implement a class Rational that supports arithmetic operations on rational numbers."
+"Student was unable to implement the required logic."
+"Student was able to implement some of the logic, but most tests are failing."
+"Student passes all tests."
+"Student was unable to implement the required logic."
+
+cs170
+S24
+CS6
+I
+"?"
+"Implement ray to object collision detection optimization using basic bounding shape idea"
+"Assignment “Ray tracing” uses virtual function mechanism to check collision against a bounding circle."
+"Student was unable to implement the required logic."
+"Student was able to implement some of the logic, but most tests are failing."
+"Student passes all tests."
+"Student was unable to implement the required logic."
+
+cs180
+S24
+CS6
+I
+"Assignment 3. Processes & POSIX Shared Memory API"
+"Understand advantages of buffering data"
+"The activity requires students to implement Square Matrix using multiple processes to understand the advantages of buffering data in enhancing system performance, concurrency, fault tolerance, and scalability while enabling effective communication and resource management between processes."
+"Assignment not submitted or incomplete: grade in range (0% -50%)"
+"Assignment submitted, but not fully functional: grade in range (51%- 75%)"
+"Assignment submission meets most requirements: grade in range (76%- 94%)"
+"Assignment submission meets all requirements: grade in range (95% - 100%)"
+
+cs200
+S24
+CS1
+I
+"Project Implementation"
+"Apply knowledge of computer science to real-time simulation"
+"The course requires a succession of 5 programming projects with the goal of building a simple graphics engine."
+"Few or none of the project requirements are satisfied."
+"Not all of the project requirements are satisfied."
+"All project requirements are met, but with small deviations from the expectation."
+"All project requirements are met exactly."
+
+cs200
+S24
+CS1
+I
+"Mathematical derivation/proof"
+"Apply knowledge of mathematics to real-time simulation"
+"The course requires 3 homework problem sets deriving the mathematical properties of linear algebra transformations as applied to computer graphics."
+"There are errors in the algebraic derivation, or no algebra is presented."
+"All algebraic derivations are correct. Logic may need some work."
+"All algebraic derivations are correct, and the logic is clear."
+"All algebraic derivations are correct, the logic is straightforward, and the presentation uses standard mathematical proof notation."
+
+cs205
+S24
+CS4
+E
+"Understanding the topic & providing background information (not more than 1 page)"
+"?"
+"?"
+"Introduction too long, or not written at all."
+"Introduction is longer than 1 page or does not clarify the goals of the paper."
+"Introduction is less than 1 page but may be unclear in setting up the paper's goals."
+"Clear, concise introduction to the topic, that sets up the analysis in a logical fashion"
+
+cs205
+S24
+CS4
+E
+"Using correct attribution to references/sources"
+"?"
+"?"
+"References are not cited, or not provided in appropriate order."
+"N/A"
+"N/A"
+"References are cited in the text and provided at the end of the paper in appropriate order."
+
+cs205
+S24
+CS4
+E
+"Analysis using Workable Ethical Theories"
+"?"
+"?"
+"Neither the parameters nor the hypothesis is listed in the paper."
+"Partial representation of the parameters in the paper."
+"Parameters are listed, but the formulation of the problem statement is unclear."
+"The parameter / hypothesis is correctly identified and listed."
+
+cs205
+S24
+CS4
+E
+"Providing an assessment or conclusion for the topic"
+"?"
+"?"
+"Conclusion is too short (1 page) or not provided at all"
+"Conclusion is partially provided or is unclear in the goal."
+"Conclusion is unclear in setting up any tangible action to implement."
+"Clear, concise conclusion to the topic, that follows from the discussion in a logical fashion"
+
+cs205
+S24
+CS4
+E
+"Writing style and grammatical errors"
+"?"
+"?"
+"Grammatical errors and no text provided"
+"N/A"
+"Some grammatical errors, and the text is unclear"
+"No grammatical errors, and the text is presented in a clear format"
+
+cs245
+S24
+Not clear
+I
+"HW #3 (reading and writing WAVE files), lab #2, #3 (8 vs 16 bit audio data, WAVE file format)"
+"Read and write audio files in uncompressed WAVE file format."
+"?"
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs245
+S24
+Not clear
+I
+"HW #2, #4 (digital audio data, resampling), lab #1, #4 (normalization, linear resampling)"
+"Manipulate raw audio data: normalize and resample."
+"?"
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs245
+S24
+Not clear
+I
+"HW #6 (waveform from MIDI), lab #5, #6 (MIDI short messages)"
+"Generate and interpret MIDI messages."
+"?"
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs245
+S24
+Not clear
+I
+"HW #9 (wavetable synthesizer), lab #7, #8, #9, #10, #12 (ADSR envelopes, wavetable implementation, frequency spectrum and partials, simple FM synthesis)"
+"Synthesize sound using wavetable, additive, and frequency modulation synthesis."
+"?"
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs245
+S24
+Not clear
+I
+"HW #5 (PortMidi)"
+"Program using low–level and mid–level audio libraries."
+"?"
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs250
+S24
+CS1
+R
+"HW #4"
+"Apply knowledge of computer science to real-time simulation. (1) Apply knowledge of computer science to build graphics engines."
+"Use OpenGL to implement a graphics engine for rendering solid meshes using forward diffuse lighting only"
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs250
+S24
+CS1
+R
+"HW #6"
+"Apply knowledge of computer science to real-time simulation. (1) Apply knowledge of computer science to build graphics engines."
+"Use OpenGL to implement a graphics engine for rendering solid meshes using the Phong lighting model."
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs250
+S24
+CS1
+R
+"HW #1"
+"Apply knowledge of mathematics to real-time simulation. (7) Apply knowledge of Linear Algebra to support computer graphics pipeline."
+"Use GLM to implement a higher level 3D math library"
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs250
+S24
+CS1
+R
+"LAB #1"
+"Apply knowledge of mathematics to real-time simulation. (7) Apply knowledge of Linear Algebra to support computer graphics pipeline."
+"use linear algebra to construct modeling transformations"
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs250
+S24
+CS1
+R
+"LAB #4"
+"Apply knowledge of mathematics to real-time simulation. (7) Apply knowledge of Linear Algebra to support computer graphics pipeline."
+"use linear algebra to construct camera viewing transformations"
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs250
+S24
+CS1
+R
+"LAB #6"
+"Apply knowledge of mathematics to real-time simulation. (7) Apply knowledge of Linear Algebra to support computer graphics pipeline."
+"use linear algebra to construct camera perspective transformations"
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs261
+S24
+CS2
+E
+"Unit tests all pass via HTTPS and the student's cloud-hosted service"
+"Implement a software-based solution to solve the problem, in accordance with 2.3"
+"The course requires students to author a database-connected web service that is used from a game client for authentication, authorization, and other user-service functions."
+"Connection to cloud not possible. Some tests fail."
+"Connection with or without HTTPS and certificates, running in the cloud. All tests pass."
+"Connection via HTTPS, using valid certificates, to a host running in the cloud. All tests pass."
+"Connection via HTTPS using valid certificates, to a host running in the cloud with appropriate security and ports open. All tests pass."
+
+cs261
+S24
+CS2
+E
+"Unit tests all pass when running service locally"
+"Implement a software-based solution to solve the problem, in accordance with 2.3"
+"The course requires students to author a database-connected web service that is used from a game client for authentication, authorization, and other user-service functions."
+"Connection not possible or some tests fail."
+"N/A"
+"N/A"
+"Connection to localhost; uses local data sources correctly, all tests pass."
+
+cs261
+S24
+CS2
+E
+"Config modified via Ecosystem"
+"Implement a software-based solution to solve the problem, in accordance with 2.3"
+"The course requires students to author a database-connected web service that is used from a game client for authentication, authorization, and other user-service functions."
+"Config elements are hardcoded, not accessible via ecosystem."
+"N/A"
+"Some required configuration elements can be modified via PM2 (some may be hardcoded)."
+"All required configuration elements can be modified via PM2 (not hardcoded)."
+
+cs261
+S24
+CS2
+E
+"Cloud Instance is correctly secured"
+"Implement a software-based solution to solve the problem, in accordance with 2.3"
+"The course requires students to author a database-connected web service that is used from a game client for authentication, authorization, and other user-service functions."
+"Server has other ports than 443 accessible to the Internet."
+"Server does not have correct ports open or does not understand TLS."
+"Server responds to valid requests on port 443 and port 3100."
+"Server only responds to valid requests on port 443."
+
+cs261
+S24
+CS2
+E
+"Game Client and Game Server Operational"
+"Implement a software-based solution to solve the problem, in accordance with 2.3"
+"The course requires students to author a database-connected web service that is used from a game client for authentication, authorization, and other user-service functions."
+"Local Game Client and Local Game Server are unable to communicate with each other."
+"Local Game Client is unable to communicate with cloud-based service."
+"Local Game Client only works with Local User Service; Local Game Server validates authentication token correctly."
+"Local Game Client correctly communicates with cloud-based service over HTTPS; Local Game Server validates authentication token correctly."
+
+cs315
+S24
+CS2
+R
+"All projects"
+"Validate the software solution for correctness"
+"The course introduces students to automated testing. Automated testing, verification, and validation are used to evaluate student projects. Students are required to write their automated tests. Students learn how to run these tests locally and through CI/CD server pipelines. Students also practice a professional “workflow” with a “pull request and code review” process which is conducted by the instructor and TAs."
+"Students are unable to run tests locally or via CI/CD server pipelines. Students are unable to submit projects through the CI/CD pipeline."
+"Students are able to run tests locally only. Students submit some projects through the CI/CD pipeline."
+"Students are able to run tests locally and via CI/CD server pipelines. Students submit some projects through the CI/CD pipeline."
+"Students are able to run tests locally and via CI/CD server pipelines. Students submit all projects through the CI/CD pipeline."
+
+cs315
+S24
+CS2
+E
+"Project 6 - Sampling Profiler"
+"Ability to employ benchmarking to analyze the implemented code"
+"Students implement performance profilers and use these profilers to analyze code and system resource efficiency. Students use several benchmarking tools to analyze code runtime performance."
+"Assignment not submitted or incomplete: grade in range (0% -50%)"
+"Assignment submitted, but not fully functional: grade in range (51%- 75%)"
+"Assignment submission meets most requirements: grade in range (76%- 94%)"
+"Assignment submission meets all requirements: grade in range (95% - 100%)"
+
+cs315
+S24
+CS2
+E
+"Project 7 – Auto-Instrumented Profiler"
+"Ability to employ benchmarking to analyze the implemented code"
+"Students implement performance profilers and use these profilers to analyze code and system resource efficiency. Students use several benchmarking tools to analyze code runtime performance."
+"Assignment not submitted or incomplete: grade in range (0% -50%)"
+"Assignment submitted, but not fully functional: grade in range (51%- 75%)"
+"Assignment submission meets most requirements: grade in range (76%- 94%)"
+"Assignment submission meets all requirements: grade in range (95% - 100%)"
+
+cs315
+S24
+CS2
+E
+"Project 8 - SIMD"
+"Ability to employ benchmarking to analyze the implemented code"
+"Students implement performance profilers and use these profilers to analyze code and system resource efficiency. Students use several benchmarking tools to analyze code runtime performance."
+"Assignment not submitted or incomplete: grade in range (0% -50%)"
+"Assignment submitted, but not fully functional: grade in range (51%- 75%)"
+"Assignment submission meets most requirements: grade in range (76%- 94%)"
+"Assignment submission meets all requirements: grade in range (95% - 100%)"
+
+cs315
+S24
+CS6
+E
+"Project 8 - SIMD"
+"Understand the relative tradeoffs in software solutions/algorithms"
+"Students inspect code disassembly to evaluate code optimization techniques. Students implement profilers and use benchmarking tools to analyze and evaluate code and system resource efficiency. The course discusses targeting specific architectures, hardware and software optimization techniques, and the cross-compatibility of these concepts."
+"Assignment not submitted or incomplete: grade in range (0% -50%)"
+"Assignment submitted, but not fully functional: grade in range (51%- 75%)"
+"Assignment submission meets most requirements: grade in range (76%- 94%)"
+"Assignment submission meets all requirements: grade in range (95% - 100%)"
+
+cs315
+S24
+CS6
+E
+"Project 6 - Sampling Profiler"
+"Understand the relative tradeoffs in software solutions/algorithms"
+"Students inspect code disassembly to evaluate code optimization techniques. Students implement profilers and use benchmarking tools to analyze and evaluate code and system resource efficiency. The course discusses targeting specific architectures, hardware and software optimization techniques, and the cross-compatibility of these concepts."
+"Assignment not submitted or incomplete: grade in range (0% -50%)"
+"Assignment submitted, but not fully functional: grade in range (51%- 75%)"
+"Assignment submission meets most requirements: grade in range (76%- 94%)"
+"Assignment submission meets all requirements: grade in range (95% - 100%)"
+
+cs315
+S24
+CS6
+E
+"Project 7 – Auto-Instrumented Profiler"
+"Understand the relative tradeoffs in software solutions/algorithms"
+"Students inspect code disassembly to evaluate code optimization techniques. Students implement profilers and use benchmarking tools to analyze and evaluate code and system resource efficiency. The course discusses targeting specific architectures, hardware and software optimization techniques, and the cross-compatibility of these concepts."
+"Assignment not submitted or incomplete: grade in range (0% -50%)"
+"Assignment submitted, but not fully functional: grade in range (51%- 75%)"
+"Assignment submission meets most requirements: grade in range (76%- 94%)"
+"Assignment submission meets all requirements: grade in range (95% - 100%)"
+
+cs315
+S24
+CS6
+E
+"Project 8 - SIMD"
+"Understand the optimization processes, if necessary, to implement a better solution"
+"The course discusses hardware and software optimization techniques and how to measure the effects on performance and system resources. Students implement SIMD operations and evaluate the differences with non-optimized code."
+"Assignment not submitted or incomplete: grade in range (0% -50%)"
+"Assignment submitted, but not fully functional: grade in range (51%- 75%)"
+"Assignment submission meets most requirements: grade in range (76%- 94%)"
+"Assignment submission meets all requirements: grade in range (95% - 100%)"
+
+cs315
+S24
+CS6
+E
+"Project 8 - SIMD"
+"Choose the best algorithm / data structure, to solve given computing problem"
+"Students implement SIMD math operations and evaluate the differences with non-optimized code. The course introduces Data-Oriented Programming and Entity Component Systems (ECS) - Archetype vs Sparse-Sets – while discussing data storage, data access patterns, memory layout, and cache."
+"Assignment not submitted or incomplete: grade in range (0% -50%)"
+"Assignment submitted, but not fully functional: grade in range (51%- 75%)"
+"Assignment submission meets most requirements: grade in range (76%- 94%)"
+"Assignment submission meets all requirements: grade in range (95% - 100%)"
+
+cs330
+S24
+CS6
+E
+"HW #4 (asymptotic notation)"
+"Understand the relative tradeoffs in software solutions/algorithms"
+"?"
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs330
+S24
+CS6
+E
+"HW #8 (brute force)"
+"Understand the optimization processes, if necessary, to implement a better solution."
+"?"
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs330
+S24
+CS6
+E
+"HW #10 (dynamic programming)"
+"Understand the optimization processes, if necessary, to implement a better solution."
+"?"
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs330
+S24
+CS6
+E
+"HW #6"
+"Choose the best algorithm / data structure, to solve a given computing problem."
+"?"
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs330
+S24
+CS6
+E
+"HW #7 (priority queues, heap-sort)"
+"Choose the best algorithm / data structure, to solve a given computing problem."
+"?"
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs330
+S24
+CS6
+E
+"HW #9 (merge-sort, quick-sort)"
+"Choose the best algorithm / data structure, to solve a given computing problem."
+"?"
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs500
+S24
+CS1
+E
+"Project Implementation"
+"Apply knowledge of computer science to real-time simulation"
+"The course requires a succession of 5 programming projects with the goal of building a CPU based ray-tracer."
+"Few or none of the project requirements are satisfied."
+"Not all of the project requirements are satisfied."
+"All project requirements are met, but with small deviations from the expectation."
+"All project requirements are met exactly."
+
+cs562
+S24
+CS1
+E
+"Project Implementation"
+"Apply knowledge of computer science to real-time simulation"
+"The course requires a succession of 5 programming projects with the goal of building graphics engine providing a selection of features."
+"Few or none of the project requirements are satisfied."
+"Not all of the project requirements are satisfied."
+"All project requirements are met, but with small deviations from the expectation."
+"All project requirements are met exactly."
+
+cs100
+F24
+CS6
+I
+"Lab 4: RS Flip Flop & D-Latch"
+"Tailor the solution to fit a practical scenario"
+"The course requires students to compare different hardware devices and chose a configuration to build memory systems "
+"Assignment not submitted or incomplete: grade in range (0% - 50%)"
+"Assignment submitted, but not fully functional: grade in range (51%, 75%)"
+"Assignment submission meets most requirements: grade in range (76%, 94%)"
+"Assignment submission meets all requirements: grade in range (95% - 100%)"
+
+cs100
+F24
+CS6
+I
+"Final Project"
+"Tailor the solution to fit a practical scenario"
+"Students have to tailor a solution (hardware and assembly algorithms) to build a controller with buttons, joystick, sound, and others."
+"Assignment not submitted or incomplete: grade in range (0% - 50%)"
+"Assignment submitted, but not fully functional: grade in range (51%, 75%)"
+"Assignment submission meets most requirements: grade in range (76%, 94%)"
+"Assignment submission meets all requirements: grade in range (95% - 100%)"
+
+cs100
+F24
+CS6
+I
+"Lab 9: ADC"
+"Apply appropriate algorithms / data structures to solve problems in the program-of-study domain (major)"
+"This activity requires the student to build the circuit and code the assembly algorithms to implement a joystick that reacts to different position thresholds."
+"Assignment not submitted or incomplete: grade in range (0% - 50%)"
+"Assignment submitted, but not fully functional: grade in range (51%, 75%)"
+"Assignment submission meets most requirements: grade in range (76%, 94%)"
+"Assignment submission meets all requirements: grade in range (95% - 100%)"
+
+cs115
+F24
+CS6
+I
+"Demonstrating understanding of the topic and underlying vocabulary"
+"Develop an introductory level vocabulary and understanding of programming concepts, terminology, and practice."
+"Lectures will introduce those topics which will be accompanied by a short Quiz. Questions on these short quizzes are later sampled and used in Exams."
+"Under 65% correct answers in quizzes and exams"
+"Over 65% correct answers in quizzes and exams"
+"Over 75% correct answers in quizzes and exams"
+"Over 90% correct answers in quizzes and exams"
+
+cs115
+F24
+CS6
+I
+"Demonstrate ability to apply the topics learned in writing a short program"
+"Understand and be able to write scripts and create simple programs. "
+"Students are given a weekly lab assignment wherein they apply the topics learned in lectures to write simple programs with clear guided steps and outcome."
+"Under 65% completion of Lab assignments"
+"Over 65% completion of Lab assignments"
+"Over 75% completion of Lab assignments"
+"Over 90% completion of Lab assignments"
+
+cs165
+F24
+CS2
+I
+"Quizzes"
+"Understand the process of game development in a Game Engine environment."
+"Lectures will introduce those topics which will be accompanied by a short Quiz. Questions on these short quizzes are later sampled and used in Exams."
+"Under 65% completion of Lab assignments"
+"Over 65% correct answers in quizzes and exams"
+"Over 75% correct answers in quizzes and exams"
+"Over 90% correct answers in quizzes and exams"
+
+cs165
+F24
+CS2
+I
+"Assignments"
+"Understanding of game objects, components, events, actions and other game related concepts"
+"Students are given weekly project assignments wherein they must implement a game features specified in a handout."
+"Under 65% completion of Lab assignments"
+"Over 65% completion of Lab assignments"
+"Over 75% completion of Lab assignments"
+"Over 90% completion of Lab assignments"
+
+cs176
+F24
+CS2
+E
+"Quizzes"
+"Understand the process of game development in a Game Engine environment."
+"Lectures will introduce those topics which will be accompanied by a short Quiz. Questions on these short quizzes are later sampled and used in Exams."
+"Under 65% correct answers in quizzes and exams"
+"Over 65% correct answers in quizzes and exams"
+"Over 75% correct answers in quizzes and exams"
+"Over 90% correct answers in quizzes and exams"
+
+cs176
+F24
+CS2
+E
+"Assignments"
+"Understanding of game objects, components, events, actions and other game related concepts"
+"Students are given weekly project assignments wherein they must implement a game features specified in a handout."
+"Under 65% completion of Lab assignments"
+"Over 65% completion of Lab assignments"
+"Over 75% completion of Lab assignments"
+"Over 90% completion of Lab assignments"
+
+cs232
+F24
+CS1
+?
+"Core Data Engineering and Analytics (basic Python, numerical Python, data frames, visualization)"
+"?"
+"?"
+"No core data engineering technique implemented or implemented with errors."
+"Some basic core data engineering techniques implemented with minor errors."
+"Some basic core data engineering techniques implemented without any implementation errors."
+"Various basic core data engineering techniques implemented without any implementation errors."
+
+cs232
+F24
+CS1
+?
+"Advanced Data Engineering and Analytics (data cleaning, data wrangling, aggregation, time series, visualization)"
+"?"
+"?"
+"No advanced engineering technique implemented or implemented with errors."
+"Some advanced data engineering techniques implemented with minor errors."
+"Some advanced data engineering techniques implemented without any implementation errors."
+"Various advanced data engineering techniques implemented without any implementation errors."
+
+cs232
+F24
+CS1
+?
+"Statistical methods (correlation, distributions, normalization, hypothesis tests)"
+"?"
+"?"
+"No or very minimal use of statistical methods"
+"Only one single statistical method used"
+"Two or more statistical methods used"
+"Various statistical method used"
+
+cs232
+F24
+CS1
+?
+"Presentation style and visual aids"
+"?"
+"?"
+"Did not present, or the presentation is incomplete"
+"Presentation is not structured, or no data analysis presented"
+"Presentation is mildly confusing, or not enough visual aids are provided"
+"Presentation is easy to follow, with lots of visual aids to understand data analysis"
+
+cs251
+F24
+CS1
+I
+"Project Implementation"
+"Apply knowledge of computer science to real-time simulation"
+"The course requires a succession of 5 programming projects with the goal of building a simple graphics engine."
+"Few or none of the project requirements are satisfied."
+"Not all of the project requirements are satisfied."
+"All project requirements are met, but with small deviations from the expectation."
+"All project requirements are met exactly."
+
+cs398
+F24
+CS1
+I
+"Project Implementation"
+"Apply knowledge of computer science to real-time simulation"
+"The course requires a succession of 5 programming projects with the goal of building a GPU real time ray tracer"
+"Few or none of the project requirements are satisfied."
+"Not all of the project requirements are satisfied."
+"All project requirements are met, but with small deviations from the expectation."
+"All project requirements are met exactly."
+
+cs398
+F24
+CS1
+I
+"Mathematical Implementation"
+"Apply knowledge of mathematics of ray/path tracing"
+"The course requires an understanding and implementation of the Monte-Carlo path tracing algorithm"
+"Few or none of the project requirements are satisfied."
+"Not all of the project requirements are satisfied."
+"All project requirements are met, but with small deviations from the expectation."
+"All project requirements are met exactly."
+
+cs541
+F24
+CS1
+I
+"Project Implementation"
+"Apply knowledge of computer science to real-time simulation"
+"The course requires a succession of 5 programming projects with the goal of building a simple graphics engine."
+"Few or none of the project requirements are satisfied."
+"Not all of the project requirements are satisfied."
+"All project requirements are met, but with small deviations from the expectation."
+"All project requirements are met exactly."
+
+cs541
+F24
+CS1
+I
+"Mathematical derivation/proof"
+"Apply knowledge of mathematics to real-time simulation"
+"The course requires 3 homework problem sets deriving the mathematical properties of linear algebra transformations as applied to computer graphics."
+"There are errors in the algebraic derivation, or no algebra is presented."
+"derivations are correct. Logic may need some work."
+"All algebraic derivations are correct, and the logic is clear."
+"All algebraic derivations are correct, the logic is straightforward, and the presentation uses standard mathematical proof notation."
+
+cs170
+F24
+CS6
+I
+"written #1,2,3,10; program #1.1,1.2,1.3."
+"Understand the syntactic differences between C and C++."
+"Topics: C++ I/O, namespaces, reference variables, function overloads, exceptions."
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs170
+F24
+CS6
+I
+"written #3,4,7,8; program #2.1,2.2,4.1,4.2,5,6,7"
+"Write programs that use the object–oriented techniques of C++."
+"Topics: classes, member functions, inheritance and polymorphism."
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs170
+F24
+CS6
+I
+"written #4; program #3.1,3.2,5,6,7"
+"Be able to distinguish between an interface and and implementation."
+"Topics: header files, public/private class members."
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs170
+F24
+CS6
+I
+"written #4,5,6; program #2.1,2.2,4.1,4.2,5"
+"Overload operators for use with user–defined classes."
+"Topics: helper/member operator overloads, rule of three."
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs170
+F24
+CS6
+I
+"written #4,9; program #3.1,3.2,8"
+"Define and use function and class templates."
+"Topics: function/class templates, specialization."
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs170
+F24
+CS6
+I
+"written #10,11; program #9"
+"Use the STL vector and list classes."
+"Topics: vector/list containers, iterators."
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs200
+F24
+CS1
+I
+"Programs #1-7"
+"Apply knowledge of computer science to real-time simulation; Apply knowledge of computer science to build graphics engines."
+"GLM, triangular meshes, 2D camera, rendering in OpenGL, bitmaps, vertex and fragment shaders."
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs200
+F24
+CS1
+I
+"Labs #1-12"
+"Apply knowledge of mathematics to real-time simulation; Apply knowledge of Linear Algebra to support computer graphics pipeline."
+"Modeling and viewing transformations, align rectangles, working with textures, barycentric coordinates, linear and bilinear interpolation."
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs225
+F24
+CS2
+I
+"assignment sparsevector"
+"Apply various design patterns to created structured software"
+"implement a sparse vector and Proxy Pattern in C++"
+"student’s code passed only the basic tests"
+"most tests have passed"
+"all tests have passed"
+"N/A"
+
+cs225
+F24
+CS2
+I
+"assignment printer queue"
+"Apply various design patterns to created structured software"
+"event-driven programming"
+"student’s code passed only the basic tests"
+"most tests have passed"
+"all tests have passed"
+"N/A"
+
+cs225
+F24
+CS2
+E
+"final exam question 12"
+"Apply various design patterns to created structured software"
+"implement Proxy Pattern applied to class Fraction in C++"
+"no answer provided"
+"student had some ideas, but mostly incorrect"
+"main idea is present, but some details are missing"
+"student provided a complete and correct answer"
+
+cs225
+F24
+CS2
+E
+"final exam question 13 and 14"
+"Apply various design patterns to created structured software"
+"implement an Adapter in C++"
+"no answer provided"
+"student had some ideas, but mostly incorrect"
+"main idea is present, but some details are missing"
+"student provided a complete and correct answer"
+
+cs280
+F24
+CS6
+R
+"Labs #1,2,4,5,6,8,10. Assignments #1,2,6,7,9."
+"Understand the relative tradeoffs in software solutions/algorithms; Compare time and space complexities of different algorithms."
+"O-notation, array and linked list implementations of stacks and queues, deque implementations, hash table implementations, recursive and non-recursive binary tree operations, balanced binary search trees, graph representations."
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs280
+F24
+CS6
+I
+"Labs #3,4,6,9. Assignments #3,4,5"
+"Understand the optimization processes, if necessary, to implement a better solution"
+"Dummy head/tail list nodes, memory pools, circular arrays, choice of hash function, AVL trees."
+"Assignment not submitted: grade of 0%"
+"Assignment submitted, but not fully functional: grade in range (0%, 75%]"
+"Assignment submission meets most requirements: grade in range (75%, 100%)"
+"Assignment submission meets all requirements: grade of 100%"
+
+cs116
+F24
+CS6
+I
+"Final Grade"
+"Apply appropriate algorithms / data structures to solve problems in the program-of-study domain (major)"
+"The course requires students to learn the basics of programming in the C# language, to solve introductory programming problems. These problems require students to understand basic data types, branching, iteration, functions, and arrays."
+"D,F"
+"C"
+"B"
+"A"
+
+cs180
+F24
+CS6
+I
+"?"
+"Understand the relative tradeoffs in software solutions/algorithms"
+"The lectures introduce students to operating systems concepts that involve tradeoffs (why cache exists, the pros/cons of different OS scheduling algorithms, the differences in using threads vs multiple processes in an application, etc). These tradeoffs are seen again on the final exam (and to an extent in the final homework project, where students had a large degree of freedom to implement their solution)."
+"D,F"
+"C"
+"B"
+"A"
+
+cs180
+F24
+CS6
+I
+"?"
+"Apply appropriate algorithms / data structures to solve problems in the program-of-study domain (major)"
+"The course requires students to solve problems by implementing software solutions that include covered topics, specifically multi-process and multi-threaded applications."
+"D,F"
+"C"
+"B"
+"A"
+
+
+
+
+
+
+
+
+
+
+
+
+

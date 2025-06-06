@@ -130,7 +130,7 @@ function generateLatex(data) {
 \\usepackage{parskip}  % This will help for paragraph spacing, if needed
 \\begin{document}
 
-\\section*{\\textbf{${data.selectedCourse} SPRING 2024 COURSE ASSESSMENT}}
+\\section*{\\textbf{${data.selectedCourse} ${data.semester} COURSE ASSESSMENT}}
 Instructor \\\\
 \\\\
 \\textbf{Part I - Performance Indicators, student outcomes and levels of focus.} \\\\

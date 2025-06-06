@@ -13,6 +13,7 @@ app.use("/latex", express.static(path.join(__dirname, "pdfs")));
 
 // Route modules
 app.use("/generate", require("./routes/generate"));
+app.use("/api", require("./routes/api"));
 
 app.get("/pdfs/:filename", (req, res) => {
     const filename = req.params.filename;

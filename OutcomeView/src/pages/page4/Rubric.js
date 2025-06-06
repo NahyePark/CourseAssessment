@@ -68,8 +68,18 @@ function Rubric() {
     useEffect(() => {
         //if(data.rubricTable.length === 0) {
             const rubricTable = data.piTable.flatMap((pi) => ([
-                { "Course Activity": pi["Course Activities supporting the PI"], Exemplary: "", Satisfactory: "", Developing: "", Unsatisfactory: "" , isNumberRow: false},
-                { "Course Activity": pi["Course Activities supporting the PI"], Exemplary: 0, Satisfactory: 0, Developing: 0, Unsatisfactory: 0 , isNumberRow: true}
+                { "Course Activity": pi["Course Activities supporting the PI"], 
+                    Exemplary: "", Satisfactory: "", 
+                    Developing: "", Unsatisfactory: "" , 
+                    PI: pi["Performance Indicator"],
+                    Description: pi["Description"],
+                    isNumberRow: false},
+                { "Course Activity": pi["Course Activities supporting the PI"], 
+                    Exemplary: 0, Satisfactory: 0, 
+                    Developing: 0, Unsatisfactory: 0 , 
+                    PI: pi["Performance Indicator"],
+                    Description: pi["Description"],
+                    isNumberRow: true}
             ]));
             updateData("rubricTable", rubricTable);
         //}

@@ -1,0 +1,32 @@
+cs225
+
+UnSatisfactory:
+ - student’s code passed only the basic tests
+ - no answer provided
+
+Developing:
+ - most tests have passed
+ - student had some ideas, but mostly incorrect
+
+Satisfactory:
+ - all tests have passed
+ - main idea is present, but some details are missing
+
+Exemplary:
+ - N/A
+ - student provided a complete and correct answer
+
+================================================================================
+cs330
+
+UnSatisfactory:
+ - Student was unable to implement the required logic.
+
+Developing:
+ - Student was able to implement some of the logic but most tests are failing.
+
+Satisfactory:
+ - Student passes all tests.
+
+Exemplary:
+ - Student implements an extra optimization that was not required or passes extra credit tests.

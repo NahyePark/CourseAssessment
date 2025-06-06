@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 import "./Class.css";
 import "../Pages.css";
 import Button from "../../components/Button"
-import { fetchData } from "../../services/api";
+import { fetchSLOs, fetchCourseSLOs } from "../../services/api";
 import { useData } from "../DataContext";
 
 function Class() {
@@ -15,51 +15,21 @@ function Class() {
     const navigate = useNavigate();
     const {updateData} = useData();
 
-    const extractInfo = (text) => {
-        const lines = text.split("\n").map(line => line.trim()).filter(Boolean);
-        const outcomes={};
-        const courses={};
-
-        let inOutcomeSection = true;
-
-        lines.forEach(line => {
-            if(inOutcomeSection) {
-                const match = line.match(/^(CS\d+)\s+"(.+?)"\s+(\w+)$/);
-                if (match) {
-                    const [_, code, description, semester] = match;
-                    outcomes[code] = {
-                        description,
-                        semester
-                    };
-                } else {
-                    inOutcomeSection = false;
-                }
-            }
-
-            if (!inOutcomeSection)
-            {
-                const parts = line.split(/\s+/);
-                if (parts.length === 3) {
-                    const [courseCode, outcomeCode, level] = parts;
-                    if (!courses[courseCode]) {
-                        courses[courseCode] = [];
-                    }
-                    courses[courseCode].push({ outcomeCode, level });
-                }
-            }
-        });
-
-        return {outcomes, courses};
-    }
-
     useEffect(() => {
         const getData = async () => {
-            const result = await fetchData("SLO-db.txt");
-            if(result) {
-                const info = extractInfo(result);
-                setSLO(info.outcomes);
-                setCourses(info.courses);
-            }
+            const sloResult = await fetchSLOs();
+            const courseSloResult = await fetchCourseSLOs();
+
+            const sloMap = {};
+            sloResult.forEach(item => {
+                sloMap[item.code] = {
+                    decription: item.decription,
+                    semester: item.semester
+                };
+            });
+            setSLO(sloMap);
+
+            setCourses(courseSloResult);
         }
         getData();
     }, []);
@@ -111,7 +81,7 @@ function Class() {
                         <option key={index} value={item.outcomeCode}>{item.outcomeCode || "UNKNOWN"}</option>
                     ))}
                 </select>
-                <select value={selectedSLO} onChange={handleSelectLevelChange} className="dropdown">
+                <select value={selectedLevel} onChange={handleSelectLevelChange} className="dropdown">
                     <option value="">-- Select Level --</option>
                     {selectedClass && selectedSLO && 
                         courses[selectedClass]
