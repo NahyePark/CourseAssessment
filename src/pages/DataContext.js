@@ -4,6 +4,7 @@ const DataContext = createContext();
 
 export const DataProvider = ({ children }) => {
   const initialData = {
+    semester: "F25",
     selectedCourse: "", // page 1
     SLO: "", // page 2
     level: "", 

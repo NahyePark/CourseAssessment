@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import { useState, useEffect } from "react";
 import Button from "../../components/Button"
-import { fetchData } from "../../services/api";
+import { fetchSLOs, fetchPIs } from "../../services/api";
 import { useData } from "../DataContext";
 import "./SLO.css";
 import "../Pages.css";
@@ -12,38 +12,43 @@ function SLO() {
     const [checkedItems, setCheckedItems] = useState({});
     const [outcomes, setOutcomes] = useState([]);
     const {data, updateData} = useData();
+    const [SLO, setSLO] = useState({});
 
-    const extractInfo = (text) => {
-        const lines = text.split("\n").map(line => line.trim()).filter(Boolean);
-
-        let currentCourse = null;
-        let result = [];
-        
-        for(const line of lines)
-        {
-            if(line.toLowerCase() === "course description")
-                continue;
-
-            if(/^[a-zA-Z]{2,5}\d{2,4}[a-zA-Z]*$/.test(line))
-            {
-                currentCourse = line.toLowerCase();
-                continue;
-            }
-
-            if (currentCourse && currentCourse === data.selectedCourse.toLowerCase())
-                result.push(line);
-        }
-
-        return result;
-    }
 
     useEffect(() => {
         const getData = async () => {
-            const result = await fetchData("PI_Old-db.txt");
-            if(result) {
-                const info = extractInfo(result);
-                setOutcomes(info);
+            const params = new URLSearchParams(window.location.search);
+            const course = params.get("course");
+            const slo = params.get("slo");
+            const level = params.get("level")
+            
+            const result = await fetchPIs();
+            const sloResult = await fetchSLOs();
+            if(result && result.length) {
+                const selectedCourse = course.toLowerCase();
+                const filtered = result.filter(item => item.course.toLowerCase() === selectedCourse)
+                                    .map(item=> item.indicator);
+                
+                setOutcomes(filtered);                   
             }
+
+            
+            const sloMap = {};
+            sloResult.forEach(item => {
+                sloMap[item.code] = {
+                    description: item.description,
+                    semester: item.semester
+                };
+            });
+            setSLO(sloMap);
+
+            const desc = sloMap[slo]?.description || "";
+            updateData({
+                selectedCourse: course,
+                SLO: slo,
+                level: level,
+                description: desc
+            });
         }
         getData();
     }, []);
@@ -98,5 +103,3 @@ function SLO() {
 }
 
 export default SLO;
-
-//<p>Selected: {Object.keys(checkedItems).filter((key) => checkedItems[key]).join(", ")}</p>

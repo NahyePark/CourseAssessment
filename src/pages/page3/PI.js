@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import "./PI.css";
 import Table from "../../components/Table";
 import Button from "../../components/Button";
-import { fetchData } from "../../services/api";
+import { fetchRubrics } from "../../services/api";
 import "../Pages.css";
 import { useData } from "../DataContext";
 
@@ -17,65 +17,44 @@ function PI() {
 
     const {data, updateData} = useData();
 
-    const extractInfo = (text) => {
-        const lines = text.split("\n").map(line => line.trim()).filter(Boolean);
-        const results = {}; // { semester: [rubric1, rubric2, ...] }
-        let i = 0;
-
-        while (i < lines.length) {
-            if (lines[i].startsWith("DB:")) {
-                i++;
-                continue;
-            }
-    
-            const course = lines[i++].toLowerCase();
-            const semester = lines[i++];
-            const slo = lines[i++];
-            const level = lines[i++];
-            const exercise = lines[i++];
-            const pi = lines[i++];
-            const description = lines[i++];
-            const unsatisfactory = lines[i++];
-            const developing = lines[i++];
-            const satisfactory = lines[i++];
-            const exemplary = lines[i++];
-    
-            if (course === data.selectedCourse.toLowerCase()) {
-                if (!results[semester]) {
-                    results[semester] = [];
-                }
-    
-                results[semester].push({
-                    course,
-                    semester,
-                    slo,
-                    level,
-                    exercise: exercise.replace(/(^"|"$)/g, ""),
-                    pi: pi.replace(/(^"|"$)/g, ""),
-                    description: description.replace(/(^"|"$)/g, ""),
-                    rubric: {
-                        unsatisfactory: unsatisfactory.replace(/(^"|"$)/g, ""),
-                        developing: developing.replace(/(^"|"$)/g, ""),
-                        satisfactory: satisfactory.replace(/(^"|"$)/g, ""),
-                        exemplary: exemplary.replace(/(^"|"$)/g, ""),
-                    }
-                });
-            }
-        }
-    
-        return results; // { "F24": [...], "S24": [...], ... }
-
-    }
-
     useEffect(() => {
             const getData = async () => {
-                const result = await fetchData("rubrics-db.txt");
-                if(result) {
-                    const info = extractInfo(result);
-                    updateData("prevRubric", info);
-                }
-            }
+                const result = await fetchRubrics();
 
+                if (result && result.length) {
+                    const selectedCourse = data.selectedCourse.toLowerCase();
+
+                    const resultsBySemester = {};
+
+                    result
+                    .filter(item => item.course.toLowerCase() === selectedCourse)
+                    .forEach(item => {
+                        const semester = item.semester;
+                        if (!resultsBySemester[semester]) {
+                            resultsBySemester[semester] = [];
+                        }
+
+                        resultsBySemester[semester].push({
+                            course: item.course,
+                            semester: item.semester,
+                            slo: item.slo,
+                            level: item.level,
+                            exercise: item.exercise,
+                            pi: item.pi,
+                            description: item.description,
+                            rubric: {
+                                unsatisfactory: item.unsatisfactory,
+                                developing: item.developing,
+                                satisfactory: item.satisfactory,
+                                exemplary: item.exemplary
+                            }
+                        });
+                    });
+
+                updateData("prevRubric", resultsBySemester);
+            }
+        };
+            
             getData();
         }, []);
 
