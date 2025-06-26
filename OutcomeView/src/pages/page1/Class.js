@@ -3,32 +3,21 @@ import { useNavigate } from "react-router-dom"
 import "./Class.css";
 import "../Pages.css";
 import Button from "../../components/Button"
-import { fetchSLOs, fetchCourseSLOs } from "../../services/api";
-import { useData } from "../DataContext";
+import { fetchCourseSLOs } from "../../services/api";
 
 function Class() {
     const [selectedClass, setSelectedClass] = useState("");
     const [courses, setCourses] = useState({});
-    const [SLO, setSLO] = useState({});
+    
     const [selectedSLO, setSelectedSLO] = useState("");
     const [selectedLevel, setSelectedLevel] = useState("");
     const navigate = useNavigate();
-    const {updateData} = useData();
+    
 
     useEffect(() => {
         const getData = async () => {
-            const sloResult = await fetchSLOs();
+            
             const courseSloResult = await fetchCourseSLOs();
-
-            const sloMap = {};
-            sloResult.forEach(item => {
-                sloMap[item.code] = {
-                    decription: item.decription,
-                    semester: item.semester
-                };
-            });
-            setSLO(sloMap);
-
             setCourses(courseSloResult);
         }
         getData();
@@ -55,6 +44,7 @@ function Class() {
         if(!selectedLevel)
             alert("Please select a Level.");
 
+        /*
         if(selectedClass && selectedSLO && selectedLevel) {
             const desc = SLO[selectedSLO].description;
             updateData("selectedCourse", selectedClass);
@@ -63,6 +53,10 @@ function Class() {
             updateData("description", desc);
             navigate(`/SLO`);
         } 
+        */
+       navigate(`/SLO?course=${selectedClass}&slo=${selectedSLO}&level=${selectedLevel}`);
+
+
     }
 
     return (

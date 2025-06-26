@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import { useState, useEffect } from "react";
 import Button from "../../components/Button"
-import { fetchPIs } from "../../services/api";
+import { fetchSLOs, fetchPIs } from "../../services/api";
 import { useData } from "../DataContext";
 import "./SLO.css";
 import "../Pages.css";
@@ -12,18 +12,43 @@ function SLO() {
     const [checkedItems, setCheckedItems] = useState({});
     const [outcomes, setOutcomes] = useState([]);
     const {data, updateData} = useData();
+    const [SLO, setSLO] = useState({});
+
 
     useEffect(() => {
         const getData = async () => {
+            const params = new URLSearchParams(window.location.search);
+            const course = params.get("course");
+            const slo = params.get("slo");
+            const level = params.get("level")
+            
             const result = await fetchPIs();
-
+            const sloResult = await fetchSLOs();
             if(result && result.length) {
-                const selectedCourse = data.selectedCourse.toLowerCase();
+                const selectedCourse = course.toLowerCase();
                 const filtered = result.filter(item => item.course.toLowerCase() === selectedCourse)
                                     .map(item=> item.indicator);
                 
                 setOutcomes(filtered);                   
             }
+
+            
+            const sloMap = {};
+            sloResult.forEach(item => {
+                sloMap[item.code] = {
+                    description: item.description,
+                    semester: item.semester
+                };
+            });
+            setSLO(sloMap);
+
+            const desc = sloMap[slo]?.description || "";
+            updateData({
+                selectedCourse: course,
+                SLO: slo,
+                level: level,
+                description: desc
+            });
         }
         getData();
     }, []);
