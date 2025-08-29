@@ -134,4 +134,63 @@ router.post('/save-rubrics', async (req, res) => {
     }
 });
 
+router.post('/save-picsv', async (req, res) => {
+	const items = req.body;
+	if (!Array.isArray(items) || items.length === 0) {
+		return res.status(400).json({ success: false, error: 'No records provided' });
+	}
+
+	const { course, semester, slo, level } = items[0] || {};
+	if (!course || !semester || !slo || !level) {
+		return res.status(400).json({ success: false, error: 'Missing course/semester/slo/level' });
+	}
+
+	let inserted = 0;
+
+	let connection;
+	try {
+		connection = await mysql.createConnection({ ...dbConfig, database: 'rubric_db' });
+		await connection.beginTransaction();
+
+		await connection.query(
+		  `DELETE FROM rubric_csv WHERE course=? AND semester=? AND slo=? AND level_code=?`,
+		  [course, semester, slo, level]
+		);
+
+		const sql = `
+		  INSERT INTO rubric_csv
+			(course, semester, slo, level_code, pi, description, details)
+		  VALUES (?,?,?,?,?,?,?)
+		`;
+
+		for (const r of items) {
+		  const params = [
+			r.course,
+			r.semester,
+			r.slo,
+			r.level,
+			r.pi,            
+			r.description,   
+			r.details,       
+		  ];
+		  const [result] = await connection.query(sql, params);
+		  inserted += result.affectedRows || 0;
+		}
+
+		await connection.commit();
+		return res.json({ success: true, inserted, total: items.length });
+	} catch (error) {
+		if (connection) await connection.rollback();
+		console.error('Database error:', error);
+		res.status(500).json({
+		    success: false,
+		    error: error.code || 'sql_error',
+		    sqlMessage: error.sqlMessage,
+		    sqlState: error.sqlState,
+		});
+	} finally {
+		if (connection) await connection.end();
+	}
+});
+
 module.exports = router;

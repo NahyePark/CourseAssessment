@@ -12,12 +12,6 @@ function generateLatex(data) {
         "Description": "Description",
       };
 
-    //const CourseActivityTable = data.piTable.map(row => {
-    //    const keys = Object.keys(row); 
-    //    keys.pop(); 
-    //    const { [keys[0]]: _, ...rest } = row; 
-    //    return rest; 
-    //  });
     const CourseActivityTable = data.piTable.map(({ ID, ...rest }) => rest);
 
     
@@ -40,55 +34,60 @@ function generateLatex(data) {
         "Unsatisfactory",
     ]
 
-    const escapeLatex = (str) => {
+    const normalizeMath = (s) => String(s ?? '')
+        .replace(/\\\$\s*\\leq\s*\\\$/g, '\\(\\leq\\)')
+        .replace(/\\\$\s*\\geq\s*\\\$/g, '\\(\\geq\\)')
+        .replace(/\u2264/g, '\\(\\leq\\)')  // ≤
+        .replace(/\u2265/g, '\\(\\geq\\)'); // ≥
 
-        str = String(str || '');
+    const escapeText = (s) => String(s ?? '')
+        .replace(/\r/g, '')
+        .replace(/\u00A0/g, ' ')
+        .replace(/(?<!\\)&/g, '\\&')
+        .replace(/(?<!\\)%/g, '\\%')
+        .replace(/(?<!\\)\$/g, '\\$')
+        .replace(/(?<!\\)_/g, '\\_')
+        .replace(/(?<!\\)#/g, '\\#')
+        .replace(/(?<!\\)\{/g, '\\{')
+        .replace(/(?<!\\)\}/g, '\\}')
+        .replace(/(?<!\\)\^/g, '\\^{}')
+        .replace(/(?<!\\)~/g, '\\textasciitilde{}');
 
-        return str
-          .replace(/\r/g, '')
-          .replace(/\u00A0/g, ' ')
-          .replace(/[&%$_#]/g, (match) => {
-            switch (match) {
-              case '&': return '\\&';
-              case '%': return '\\%';
-              case '$': return '\\$';
-              case '_': return '\\_';
-              case '#': return '\\#';
-              default: return match;
-            }
-          });
-      };
 
-      const generateLatexTable = (tableData, columns, map) => {
-        const columnWidth = (1 / columns.length).toFixed(3);
-        const columnFormat = columns.map(() => `p{${columnWidth}\\textwidth}`).join('|');
+    const sanitizeCell = (raw) => escapeText(normalizeMath(raw));
+      
 
+    const generateLatexTable = (tableData, columns, map, opts = {}) => {
+        const shrink = typeof opts.shrink === 'number' ? opts.shrink : 0.98; // 살짝 여유
+        const colWidth = (shrink / columns.length).toFixed(3);
+        const columnFormat = columns.map(() => `p{${colWidth}\\textwidth}`).join('|');
+      
         let latexTable = `\\begin{tabular}{|${columnFormat}|}`;
         latexTable += '\\hline\n';
-    
-        // Table header
-        latexTable += columns.join(' & ') + ' \\\\ \\hline\n';
-    
-        // Table rows
-        if(map)
-        {
-            tableData.forEach(row => {
-                latexTable += columns.map((col) => escapeLatex(row[headerToKeyMap[col]] || '')).join(' & ') + ' \\\\ \\hline\n';
-            });
+      
+        // Header
+        latexTable += columns.map(sanitizeCell).join(' & ') + ' \\\\ \\hline\n';
+      
+        // Rows
+        if (map) {
+          tableData.forEach(row => {
+            latexTable += columns
+              .map(col => sanitizeCell(row[headerToKeyMap[col]] ?? ''))
+              .join(' & ') + ' \\\\ \\hline\n';
+          });
+        } else {
+          tableData.forEach(row => {
+            latexTable += columns
+              .map(col => sanitizeCell(row[col] ?? ''))
+              .join(' & ') + ' \\\\ \\hline\n';
+          });
         }
-        else
-        {
-            tableData.forEach(row => {
-                latexTable += columns.map((col) => escapeLatex(row[col] || '')).join(' & ') + ' \\\\ \\hline\n';
-            });
-        }
-
-    
+      
         latexTable += '\\end{tabular}';
         return latexTable;
     };
 
-      const generateLatexHistogram = (rowData) => {
+    const generateLatexHistogram = (rowData) => {
 
         const values = [
             parseFloat(rowData.Exemplary),
@@ -155,7 +154,7 @@ ${generateLatexHistogram(data.cumulativeTable[data.cumulativeTable.length - 1])}
 \\\\
 \\textbf{Part IV – Analysis.} \\\\
 \\\\
-\\parbox{\\textwidth}{\\raggedright ${escapeLatex(data.dataAnalysis)}}
+\\parbox{\\textwidth}{\\raggedright ${sanitizeCell(data.dataAnalysis)}}
 \\end{document}
 `;
 

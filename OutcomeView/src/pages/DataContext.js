@@ -16,6 +16,14 @@ export const DataProvider = ({ children }) => {
     dataAnalysis: "", // page 5
     pdfUrl: null,
     prevRubric: [], 
+
+    csvData: [],
+    formulaByPI: {},
+    thresholdByPI: {},
+    piDescriptions: [],
+    activityVars: {},
+    activityDescs: {},
+    flowSource: "", // In summary page(page5), flag for previous page(PI or PICSV)
   }
   
   const [data, setData] = useState(initialData); 

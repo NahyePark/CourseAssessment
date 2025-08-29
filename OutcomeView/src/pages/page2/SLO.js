@@ -76,6 +76,20 @@ function SLO() {
         }
     }
 
+    const handleUploadCSVPage = () => {
+        const isAnyChecked = Object.values(checkedItems).includes(true);
+        if(isAnyChecked) {
+            const initialCourseActivities = Object.keys(checkedItems).map((pi, index) => ({
+                "ID": `PI${index + 1}`,
+                "Performance Indicator": pi, 
+            }));
+            updateData("courseActivities", initialCourseActivities);
+            navigate(`/PICSV`);
+        } else {
+            alert("Please select at least 1 outcome.");
+        }
+    }
+
     const handlePrevPage = () => {
         navigate(`/`);
     }
@@ -96,7 +110,8 @@ function SLO() {
             </div>
             <div className="submit-button">
                 <Button text={"Previous"} onClick={handlePrevPage} className="prev-button"/>
-                <Button text={"Submit"} onClick={handleNextPage} className="next-button"/>
+                <Button text={"Import From CSV"} onClick={handleUploadCSVPage} className="next-button"/>
+                <Button text={"Create Report Manually"} onClick={handleNextPage} className="next-button"/>
             </div>
         </div>
     );

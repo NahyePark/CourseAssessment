@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import "./Summary.css";
+import { useEffect, useCallback } from "react";
 import Table from "../../components/Table";
 import Button from "../../components/Button";
 import Histogram from "../../components/Histogram";
@@ -35,14 +36,80 @@ function Summary() {
         {name: "Unsatisfactory"},
     ]
 
+    useEffect(() => {
+        // calculate a cumulative table
+        const extractedTable = data.rubricTable.filter(row => row.isNumberRow);
+        let cumulativeNumberTable = extractedTable.map((row) => (
+            {
+                ID: row["Course Activity"], 
+                Exemplary: row.Exemplary,
+                Satisfactory: row.Satisfactory,
+                Developing: row.Developing,
+                Unsatisfactory: row.Unsatisfactory,
+            }
+        ));
+        console.log(cumulativeNumberTable);
+        const totals = extractedTable.reduce((acc, row) => ({
+            Exemplary: acc.Exemplary + Number(row.Exemplary),
+            Satisfactory: acc.Satisfactory + Number(row.Satisfactory),
+            Developing: acc.Developing + Number(row.Developing),
+            Unsatisfactory: acc.Unsatisfactory + Number(row.Unsatisfactory),
+        }), { Exemplary: 0, Satisfactory: 0, Developing: 0, Unsatisfactory: 0 });
+
+        const totalNumber = totals.Exemplary + totals.Satisfactory + totals.Developing + totals.Unsatisfactory;
+
+        const attainmentRow = {
+            ID: "Cumulative Attainment",
+            Exemplary: totals.Exemplary,
+            Satisfactory: totals.Satisfactory,
+            Developing: totals.Developing,
+            Unsatisfactory: totals.Unsatisfactory,
+        };
+
+        const levelAttainmentRow = {
+            ID: `Level of Attainment for ${data.SLO}`,
+            Exemplary: `${(totals.Exemplary / totalNumber * 100.0).toFixed(2)}%`,
+            Satisfactory: `${(totals.Satisfactory / totalNumber * 100.0).toFixed(2)}%`,
+            Developing: `${(totals.Developing / totalNumber * 100.0).toFixed(2)}%`,
+            Unsatisfactory: `${(totals.Unsatisfactory / totalNumber * 100.0).toFixed(2)}%`,
+        };
+
+        cumulativeNumberTable = [...cumulativeNumberTable, attainmentRow, levelAttainmentRow];
+
+        updateData("cumulativeTable", cumulativeNumberTable);
+        console.log(data.cumulativeTable);
+        
+    }, []);
+
+    // reset current data before go to previous page
+    const resetCsvState = useCallback(() => {
+        updateData("csvData", []);
+        updateData("CourseActivities", []);
+        updateData("activityVars", {});
+        updateData("activityDescs", {});
+        updateData("formulaByPI", {});
+        updateData("thresholdByPI", {});    
+        updateData("piDescriptions", {}); 
+        updateData("piTable", []);
+        updateData("rubricTable", []);
+        updateData("flowSource", "");
+      }, [updateData]);
+
+
     const handleNextPage = () => {
         navigate(`/Download`);
-    }
+    };
 
     const handlePrevPage = () => {
         updateData("dataAnalysis", "");
-        navigate(`/Rubric`);
-    }
+        const src = data.flowSource;
+        if (src === "PICSV") {
+            resetCsvState();
+            navigate("/PICSV");
+        } else {
+            navigate("/Rubric");
+        }
+    };
 
     const onChangeTextInput = (e) => {
         updateData('dataAnalysis', e.target.value);
@@ -81,12 +148,13 @@ function Summary() {
                 </div>
             </div>
 
+            {data.cumulativeTable.length > 0 ? (
             <div className="option">
                 <p className="item"><strong>Generated histogram</strong></p>
                 <div className="histogram-container">
                     <Histogram className="histogram" value={data.SLO} data={data.cumulativeTable[data.cumulativeTable.length - 1]} />
                 </div>
-            </div>
+            </div>): null}
 
             <div className="option">
                 <p className="item"><strong>Data Analysis</strong></p>  

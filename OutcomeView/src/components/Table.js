@@ -32,7 +32,7 @@ function Table({ className, columns, data, onDataChange, tableWidth = "80%", inp
             width: tableWidth,
             borderCollapse: "collapse",
             margin: "20px auto",
-            tableLayout: "fixed" // Force column widths to be respected
+            tableLayout: "fixed" 
           }}
           className={className}
           border="1"
@@ -49,7 +49,7 @@ function Table({ className, columns, data, onDataChange, tableWidth = "80%", inp
                       minWidth: col.name === firstColumnName ? "80px" : "auto",
                     }}
                 >
-                  {col.name}
+                  {col.header ?? col.name}
                 </th>
               ))}
             </tr>
@@ -59,7 +59,14 @@ function Table({ className, columns, data, onDataChange, tableWidth = "80%", inp
               <tr key={rowIndex}>
                 {columns.map((col, colIndex) => {
                   const value = row[col.name];
-
+                  const colType = typeof col.type === "function" ? col.type(row, rowIndex) : col.type;
+                  // 'number' | 'text' | undefined
+                  const cellKindRaw = typeof col.cellKind === "function" ? col.cellKind(row, rowIndex, col.name): col.cellKind; 
+                  const isNumberCell = colType === "number" || (colType === "textOrNumber" &&
+                                                    (cellKindRaw
+                                                      ? cellKindRaw === "number"
+                                                      : !!row.isNumberRow)); 
+                  const readOnly = typeof col.readOnly === "function" ? !!col.readOnly(row, rowIndex, col.name): !!col.readOnly;
                   if (col.name === firstColumnName) {
                     const rowSpan = getRowSpan(rowIndex, col.name);
                     if (rowSpan === 0) return null; 
@@ -79,49 +86,68 @@ function Table({ className, columns, data, onDataChange, tableWidth = "80%", inp
                     );
                   }
 
+                  const tdWidth = isNumberCell || colType === "number" ? "50px" : "auto";
                   return (
                     <td key={colIndex} style={{ 
                         padding: "10px", 
                         textAlign: "center",
-                        width: col.type === "number" ? "50px" : "auto", 
+                        width: tdWidth, 
                       }}>
-                      {col.type === "textOrNumber" ? (
-                        row.isNumberRow? (
+                      {colType === "textOrNumber" ? (
+                        isNumberCell ? (
+                          readOnly ? (
+                            <span
+                              style={{ fontSize: inputFontSize, opacity: 0.7 }}
+                            >
+                              {value ?? ""}
+                            </span>
+                          ) : (
                             <input
-                                type={"number"}
-                                value={value || ""}
-                                onChange={(e) => handleInputChange(rowIndex, col.name, e.target.value)}
-                                style={{
-                                    flex: "flex-start",
-                                    flexDirection: "column",
-                                    width: "95%", 
-                                    height: "40px", 
-                                    fontSize: inputFontSize,
-                                    padding: "5px",
-                                }}
-                        />
+                              type="number"
+                              value={value ?? ""}
+                              onChange={(e) =>
+                                handleInputChange(
+                                  rowIndex,
+                                  col.name,
+                                  e.target.value
+                                )
+                              }
+                              style={{
+                                width: "95%",
+                                height: "40px",
+                                fontSize: inputFontSize,
+                                padding: "5px",
+                              }}
+                            />
+                          )
+                        ) : readOnly ? (
+                          <span style={{ fontSize: inputFontSize, opacity: 0.7 }}>
+                            {value ?? ""}
+                          </span>
                         ) : (
-                            <textarea
-                                type={"text"}
-                                value={value || ""}
-                                onChange={(e) => handleInputChange(rowIndex, col.name, e.target.value)}
-                                style={{
-                                    flex: "flex-start",
-                                    flexDirection: "column",
-                                    width: "95%", 
-                                    height: inputHeight, 
-                                    fontSize: inputFontSize,
-                                    padding: "5px",
-                                }}
-                        />
+                          <textarea
+                            value={value ?? ""}
+                            onChange={(e) =>
+                              handleInputChange(rowIndex, col.name, e.target.value)
+                            }
+                            style={{
+                              width: "95%",
+                              height: inputHeight,
+                              fontSize: inputFontSize,
+                              padding: "5px",
+                            }}
+                          />
                         )
-                        
+                      ) : colType === "checkbox" ? (
+                        <input
+                          type="checkbox"
+                          checked={!!value}
+                          onChange={() =>
+                            handleInputChange(rowIndex, col.name, !value)
+                          }
+                        />
                       ) : (
-                        <span style={{ 
-                            fontSize: inputFontSize,
-                            }}>
-                            {value}
-                        </span>
+                        <span style={{ fontSize: inputFontSize }}>{value}</span>
                       )}
                     </td>
                   );

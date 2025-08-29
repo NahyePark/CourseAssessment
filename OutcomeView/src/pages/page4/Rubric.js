@@ -66,7 +66,7 @@ function Rubric() {
     
 
     useEffect(() => {
-        //if(data.rubricTable.length === 0) {
+        if(!data.rubricTable || data.rubricTable.length === 0) {
             const rubricTable = data.piTable.flatMap((pi) => ([
                 { "Course Activity": pi["Course Activities supporting the PI"], 
                     Exemplary: "", Satisfactory: "", 
@@ -82,7 +82,7 @@ function Rubric() {
                     isNumberRow: true}
             ]));
             updateData("rubricTable", rubricTable);
-        //}
+        }
     }, [data.piTable])
 
     /*
@@ -121,6 +121,22 @@ function Rubric() {
             alert("Please fill out all cells in the table");
         else
         {
+            //update the rubric with descriptions
+            const updatedRubricTable = data.rubricTable.map(row => {
+                const matchingPI = data.piTable.find(
+                    pi => pi["Course Activities supporting the PI"] === row["Course Activity"] &&
+                            pi["Performance Indicator"] === row.PI
+                );
+                return {
+                    ...row,
+                    Description: matchingPI?.Description || ""
+                };
+
+            });
+        
+            updateData("rubricTable", updatedRubricTable);
+/*
+            // calculate a cumulative table
             const extractedTable = data.rubricTable.filter(row => row.isNumberRow);
             let cumulativeNumberTable = extractedTable.map((row) => (
                 {
@@ -159,7 +175,7 @@ function Rubric() {
 
             cumulativeNumberTable = [...cumulativeNumberTable, attainmentRow, levelAttainmentRow];
 
-            updateData("cumulativeTable", cumulativeNumberTable);
+            updateData("cumulativeTable", cumulativeNumberTable);*/
             navigate(`/Summary`);
         } 
     }

@@ -59,7 +59,7 @@ function PI() {
         }, []);
 
     const handleDataChange = (newData) => {
-        updateData("CourseActivities", newData);
+        updateData("courseActivities", newData);
     };
 
     const handleNextPage = () => {
@@ -75,7 +75,7 @@ function PI() {
             );
             console.log(transformTable);
             updateData("piTable", transformTable);
-
+            updateData("flowSource", "PI");
             navigate(`/Rubric`);
         } else {
             alert("Please fill out the course activities.");
@@ -83,7 +83,7 @@ function PI() {
     }
 
     const handlePrevPage = () => {
-        navigate("/SLO");
+        navigate(`/SLO?course=${data.selectedCourse}&slo=${data.SLO}&level=${data.level}`);
 
     }
 

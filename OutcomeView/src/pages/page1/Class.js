@@ -71,8 +71,8 @@ function Class() {
                 </select>
                 <select value={selectedSLO} onChange={handleSelectSLOChange} className="dropdown">
                     <option value="">-- Select SLO --</option>
-                    {selectedClass && courses[selectedClass]?.map((item, index) => (
-                        <option key={index} value={item.outcomeCode}>{item.outcomeCode || "UNKNOWN"}</option>
+                    {selectedClass && Array.from(new Set(courses[selectedClass]?.map(item => item.outcomeCode))).map((code, index) => (
+                        <option key={index} value={code}>{code || "UNKNOWN"}</option>
                     ))}
                 </select>
                 <select value={selectedLevel} onChange={handleSelectLevelChange} className="dropdown">
